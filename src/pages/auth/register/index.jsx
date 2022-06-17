@@ -1,6 +1,7 @@
 import { useAuth } from "../../../core/auth/auth.hook";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import './style.css'
 
 function Register (){
 
@@ -24,10 +25,10 @@ function Register (){
             {isLoading ? <h1>Loading...</h1> :
                 <>
                     {showEmailConfirm ? <p>Te hemos enviado un email, revisa tu bandeja para validarlo</p>: ''}
-                    <form onSubmit={handleSubmit}>
-                        <input name="email" type="email" placeholder="Introduzca email" />
-                        <input name="pass" type="password" placeholder="Introduzca password" />          
-                        <button type="submit">Registrarse</button>
+                    <form className="formulario" onSubmit={handleSubmit}>
+                        <input className="input"name="email" type="email" placeholder="Email" />
+                        <input className="input"name="pass" type="password" placeholder="Contraseña" />          
+                        <button className="boton" type="submit">Registrarse</button>
                     </form>
                     </>
             }

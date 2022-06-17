@@ -17,11 +17,13 @@ import { useAuth } from "../../../core/auth/auth.hook";
 
     }
     return (
-        <form onSubmit={handleLogin}>
-            <input name="email" type="email" placeholder="Email" />
-            <input name="pass" type="password" placeholder="Password" />
-            <button type="submit">Log In</button>
-        </form>
+        
+            <form className="formulario" onSubmit={handleLogin}>
+                        <input className="input"name="email" type="email" placeholder="Email" />
+                        <input className="input"name="pass" type="password" placeholder="Contraseña" />          
+                        <button className="boton" type="submit">Log In</button>
+                </form>
+        
     )
 }
 
