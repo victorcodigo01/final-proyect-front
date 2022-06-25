@@ -46,11 +46,20 @@ export const useAuth = () => {
         updateIsLoading(false); //cuando termino de llamar a la API dejo de cargar
     }
 
+
+    // const deleting = async (user) => {
+    //     updateIsDelete(true); //me pongo en modo carga
+    //     await deleteAPI(user);
+    //     updateIsDeleting(false); //cuando termino de llamar a la API dejo de cargar
+    // }
+
+
     return {
         isAuth,
         isLoading,
         register,
         login,
-        validate
+        validate,
+        // deleting,
         }
 }

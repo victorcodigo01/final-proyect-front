@@ -1,0 +1,6 @@
+.button-theme{
+    background-color: #00bcd4;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}

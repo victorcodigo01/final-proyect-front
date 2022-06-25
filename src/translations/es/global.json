@@ -1,6 +1,37 @@
  {
     "header":{
-        "hello-world":"Hola Mundo"
+        "hello-world":"Hola Mundo",
+        "home": "Casa"
+    },
+
+    "cards":{
+        "joy": "Sentimiento que se manifiesta a partir de un buen estado de ánimo, comporta satisfacción y va acompañado de la sonrisa o risa",
+        "sorrow": "Sensación de dolor emocional, causado por un factor desencadenante y que conlleva pensamientos con un tono pesimista.",
+        "anger": "Emoción primaria que indica una ira muy grande contra una persona o situación.",
+        "surprise": "Alteración emocional causada por algo imprevisto o inesperado.",
+        "exposed": "Poner algo o alguien de forma que pueda ser visto por los demás",
+        "blurred": "No se distingue a la persona con claridad en la foto.",
+        "headwear": "La persona de la foto tiene la cabeza cubierta y no se le pueden reconocer sus facciones."
+    }, 
+    
+    "pomodoro":{
+        "step-one": "Divide la actividad en tareas.",
+        "step-two": "Una vez divididas, deberás jerarquizarlas. Es decir, priorizarlas y ordenarlas en consecuencia con su ejecución.",
+        "step-three": "Pon el temporizador a 25 minutos y ejecutar el método hasta que suene la alarma. La idea es mantenerte concentrado y trabajar de manera intensiva durante este periodo de tiempo, evitando cualquier distracción.",
+        "step-four": "Cuando suene la alarma, deberás anotar o marcar la tarea realizada y descansar durante 5 minutos, también puedes poner el cronometro con la cuenta atrás.",
+        "step-five": "Mientras dura la pausa corta podrás hacer lo que quieras, excepto trabajar en la próxima tarea.",
+        "step-six": "Una vez finalice el tiempo de descanso, deberás poner de nuevo el contador a 0 y programar tus siguientes 25 minutos de trabajo, donde deberás abordar la siguiente tarea.",
+        "step-seven": "Cuando hayas completado cuatro tareas o pomodoros, podrás realizar una pausa más larga, de unos 15 minutos aproximadamente. Después, deberás iniciar un nuevo bloque de cuatro tareas."
+    },
+    "tristeza":{
+        "one": "No la niegues, lidia con ella. Deja que tu cuerpo exprese lo que siente con total libertad, que saque lo que lleva dentro, que se desahogue.",
+        "two": "Una vez divididas, deberás jerarquizarlas. Es decir, priorizarlas y ordenarlas en consecuencia con su ejecución.",
+        "three": "Pon el temporizador a 25 minutos y ejecutar el método hasta que suene la alarma. La idea es mantenerte concentrado y trabajar de manera intensiva durante este periodo de tiempo, evitando cualquier distracción.",
+        "four": "Cuando suene la alarma, deberás anotar o marcar la tarea realizada y descansar durante 5 minutos, también puedes poner el cronometro con la cuenta atrás.",
+        "five": "Mientras dura la pausa corta podrás hacer lo que quieras, excepto trabajar en la próxima tarea.",
+        "six": "Una vez finalice el tiempo de descanso, deberás poner de nuevo el contador a 0 y programar tus siguientes 25 minutos de trabajo, donde deberás abordar la siguiente tarea.",
+        "seven": "Cuando hayas completado cuatro tareas o pomodoros, podrás realizar una pausa más larga, de unos 15 minutos aproximadamente. Después, deberás iniciar un nuevo bloque de cuatro tareas."
     }
+    
 
 }

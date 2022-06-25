@@ -4,55 +4,60 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Register  from './pages/auth/register';
+import Register from './pages/auth/register';
 import Validate from './pages/auth/validate';
 import Login from './pages/auth/login';
 import RequireAuth from './core/auth/auth.component';
 import User from './pages/user';
 import React, { useState } from 'react';
-import styled, {ThemeProvider} from 'styled-components';
-import { lightTheme, darkTheme, GlobalStyles} from './themes.js';
 import Header from './shared/header';
+import Footer from './shared/footer';
+import PrivacyPolicy from './shared/footer/privacy-policy';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './components/home';
+import Navega from './components/nav';
+import { ThemeProvider } from "./context/theme.context"
+import Body from './components/body';
+import Card from './components/card';
+import DeleteUser from './pages/auth/delete';
 
-const StyledApp = styled.div`
-color: ${(props) => props.theme.fontColor};
+   
 
-`;
+
+
+
 
 function App() {
-const [theme, setTheme] = useState('light');
+ 
+  
 
-const themeToggler = () => {
-  theme === 'light' ? setTheme('dark') : setTheme('light');
-}
+  
 
 
   return (
-    
+
+
     <BrowserRouter>
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme} >
-        <GlobalStyles></GlobalStyles>
-        <StyledApp>Hello world
-          <button onClick={() => themeToggler()}>Change Theme</button>
-        </StyledApp>
-      </ThemeProvider>
-      <Header></Header>
-    <header>
-      <p>Esto es el header</p>
-    </header>
-    <Routes>
-      <Route path="/" element={<h1>HELLO</h1> }/>
-      <Route path="/validate" element={<Validate />} />
-      <Route path="/user" element={<RequireAuth><User/></RequireAuth>} />
-      <Route path="/auth">
-        <Route path="register" element={<Register/>}></Route>
-        <Route path="login" element={<Login/>}></Route>
-      </Route>
-    </Routes>
-    <footer>
-      <p>Esto es el footer</p>
-    </footer>
-  </BrowserRouter>
+      <Navega></Navega>
+      <Body></Body>
+      
+
+        <Routes>
+          <Route path="/" element={<Home></Home>} />
+          <Route path="/validate" element={<Validate />} />
+          <Route path="/user" element={<RequireAuth><User /></RequireAuth>} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/auth">
+            <Route path="register" element={<Register />}></Route>
+            <Route path="login" element={<Login />}></Route>
+            <Route path="delete" element={<DeleteUser />}></Route>
+          </Route>
+        </Routes>
+      <Footer></Footer>
+    </BrowserRouter>
+// {emotions.map}
+
+   
   );
 }
 
