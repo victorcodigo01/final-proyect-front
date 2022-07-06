@@ -55,7 +55,6 @@ function App() {
         </Routes>
       <Footer></Footer>
     </BrowserRouter>
-// {emotions.map}
 
    
   );

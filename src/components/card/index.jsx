@@ -1,21 +1,23 @@
 import { useTranslation } from "react-i18next";
 import {Card} from "react-bootstrap";
+import './style.css';
+
 
 
 
 function CardManageEmotion ({manageEmotions} ){
     const [t, i18n] = useTranslation("global");
-    // console.log('TIPO DE DATO', manageEmotions)
+    console.log('TIPO DE DATO', manageEmotions)
     return(
         <>
         
         
-        <Card className="mt-5 mb-5 rounded " style={{ width: '14rem' }}>
-            <Card.Img variant="top" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/51/441350c22211e4bd49df699111f70c/Wanting-to-be-happy.JPG?auto=format%2Ccompress&dpr=1" />
+        <Card className="mt-5 mb-5 card_main" style={{ width: '27rem' }}>
+            <Card.Img variant="top" src={`http://localhost:3001/static/${manageEmotions.img}`} />
             <Card.Body>
                 <Card.Title>{manageEmotions.title}</Card.Title>
-                <Card.Text>
-                {manageEmotions.emotionsManage.map(v => v )}
+                <Card.Text className="card_text">
+                {manageEmotions.emotionsManage.map(v => <p>{v}</p> )}
                 
                 
                 </Card.Text>

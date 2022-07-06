@@ -23,5 +23,11 @@
         "step-five": "During the short break you can do whatever you want, except work on the next task.",
         "step-six": "Once the break time is over, you must reset the counter to 0 and schedule your next 25 minutes of work, where you must tackle the next task.",
         "step-seven": "When you have completed four tasks or pomodoros, you can take a longer break, of about 15 minutes. Next, you'll need to start a new block of four tasks."
+    },
+    "title": {
+        "manageEmo": "MANAGEMENT OF EMOTIONS",
+        "pomod": "POMODORO TECHNIQUE",
+        "taskTime": "TASK TIME"
+
     }
 }

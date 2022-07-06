@@ -14,9 +14,12 @@ import CardEmotion from "../../components/card/card-emotion";
 import CardPomodoro from "../../components/card/card-pomo";
 
 
+
 function User () {
 
-    const [emotions, setEmotions] = useState([])
+
+
+const [emotions, setEmotions] = useState([])
   const [emotionsFiltered, setEmotionsFiltered] = useState([])
 // console.log(emotions);
   
@@ -68,7 +71,9 @@ fetch("http://localhost:3001/pomodoro-technique")
 })
 },[])
 
-    // const manageEmotions = emotions;
+const getTokenUser = sessionStorage.getItem('auth_token');
+   
+// const manageEmotions = emotions;
 
     // LAS PROPS SON: manageEmotions, emotions y pomodoro dentro de los map
 console.log('EMOTIONS',emotions)
@@ -90,8 +95,19 @@ console.log('EMOTIONS',emotions)
        
 
         <CardGroup></CardGroup>
+        
+        <Button className="btn btn-outline-secondary" onClick={() => {
+        console.log('token', getTokenUser);
+         fetch('http://localhost:3001/users/delete', {
+          method: "DELETE", 
+          headers: {
+              "Content-type": 'application/json',
+              'Authorization': `Bearer ${getTokenUser}`
+          },
+      })}}>desaparecer</Button>
     
         </>
+        
 
             
             

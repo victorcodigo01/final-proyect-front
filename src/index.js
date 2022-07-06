@@ -11,6 +11,7 @@ import global_en from "./translations/en/global.json";
 import './custom.scss';
 import { ThemeProvider } from './context/theme.context';
 
+
 i18next.init({
   interpolation: {escapeValue: false},
   lng: 'es',

@@ -31,7 +31,16 @@
         "five": "Mientras dura la pausa corta podrás hacer lo que quieras, excepto trabajar en la próxima tarea.",
         "six": "Una vez finalice el tiempo de descanso, deberás poner de nuevo el contador a 0 y programar tus siguientes 25 minutos de trabajo, donde deberás abordar la siguiente tarea.",
         "seven": "Cuando hayas completado cuatro tareas o pomodoros, podrás realizar una pausa más larga, de unos 15 minutos aproximadamente. Después, deberás iniciar un nuevo bloque de cuatro tareas."
+    },
+    "title": {
+        "manageEmo": "GESTIÓN DE EMOCIONES",
+        "pomod": "TÉCNICA POMODORO",
+        "taskTime": "TIEMPO DE TAREA"
+      
+
     }
+    
+
     
 
 }
