@@ -1,5 +1,5 @@
 .formulario {
-    background-image: url( https://pixabay.com/es/photos/smiley-emoticon-enojar-enfadado-2979107/);
+    
     width: min(60rem, 100%);
     background: #654ea3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
@@ -10,7 +10,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+    background-image:url(/assets/login.jpg);
 }
 
 
@@ -25,7 +25,7 @@
 }
 
 .boton{
-    background: #06c9f5;
+    background: #3af506;
     border: 0;
     padding: 10px;
     color: #fff;
