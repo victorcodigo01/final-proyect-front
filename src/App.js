@@ -30,7 +30,6 @@ import DeleteUser from './pages/auth/delete';
 function App() {
  
   
-
   
 
 
@@ -44,14 +43,16 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home></Home>} />
+          <Route path="/validate" element={<Validate />} />
+          <Route path="/user" element={<RequireAuth><User /></RequireAuth>} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          
           <Route path="/auth">
             <Route path="register" element={<Register />}></Route>
             <Route path="login" element={<Login />}></Route>
             <Route path="delete" element={<DeleteUser />}></Route>
           </Route>
-          <Route path="/validate" element={<Validate />} />
-          <Route path="/user" element={<RequireAuth><User /></RequireAuth>} />
-          <Route path="/privacy" element={<PrivacyPolicy />} />
+          
           
         </Routes>
       <Footer></Footer>

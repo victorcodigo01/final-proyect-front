@@ -13,7 +13,8 @@ function CardManageEmotion ({manageEmotions} ){
         
         
         <Card className="mt-5 mb-5 card_main" style={{ width: '27rem' }}>
-            <Card.Img variant="top" src={`http://localhost:3001/static/${manageEmotions.img}`} />
+            <Card.Img variant="top" src={`https://example-pomodoro-emot.onrender.com/static/${manageEmotions.img}`} />
+            {/* src={`http://localhost:3001/static/${manageEmotions.img}`} */}
             <Card.Body>
                 <Card.Title>{manageEmotions.title}</Card.Title>
                 <Card.Text className="card_text">

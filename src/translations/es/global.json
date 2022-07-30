@@ -14,33 +14,42 @@
         "headwear": "La persona de la foto tiene la cabeza cubierta y no se le pueden reconocer sus facciones."
     }, 
     
-    "pomodoro":{
-        "step-one": "Divide la actividad en tareas.",
-        "step-two": "Una vez divididas, deberás jerarquizarlas. Es decir, priorizarlas y ordenarlas en consecuencia con su ejecución.",
-        "step-three": "Pon el temporizador a 25 minutos y ejecutar el método hasta que suene la alarma. La idea es mantenerte concentrado y trabajar de manera intensiva durante este periodo de tiempo, evitando cualquier distracción.",
-        "step-four": "Cuando suene la alarma, deberás anotar o marcar la tarea realizada y descansar durante 5 minutos, también puedes poner el cronometro con la cuenta atrás.",
-        "step-five": "Mientras dura la pausa corta podrás hacer lo que quieras, excepto trabajar en la próxima tarea.",
-        "step-six": "Una vez finalice el tiempo de descanso, deberás poner de nuevo el contador a 0 y programar tus siguientes 25 minutos de trabajo, donde deberás abordar la siguiente tarea.",
-        "step-seven": "Cuando hayas completado cuatro tareas o pomodoros, podrás realizar una pausa más larga, de unos 15 minutos aproximadamente. Después, deberás iniciar un nuevo bloque de cuatro tareas."
-    },
-    "tristeza":{
-        "one": "No la niegues, lidia con ella. Deja que tu cuerpo exprese lo que siente con total libertad, que saque lo que lleva dentro, que se desahogue.",
-        "two": "Una vez divididas, deberás jerarquizarlas. Es decir, priorizarlas y ordenarlas en consecuencia con su ejecución.",
-        "three": "Pon el temporizador a 25 minutos y ejecutar el método hasta que suene la alarma. La idea es mantenerte concentrado y trabajar de manera intensiva durante este periodo de tiempo, evitando cualquier distracción.",
-        "four": "Cuando suene la alarma, deberás anotar o marcar la tarea realizada y descansar durante 5 minutos, también puedes poner el cronometro con la cuenta atrás.",
-        "five": "Mientras dura la pausa corta podrás hacer lo que quieras, excepto trabajar en la próxima tarea.",
-        "six": "Una vez finalice el tiempo de descanso, deberás poner de nuevo el contador a 0 y programar tus siguientes 25 minutos de trabajo, donde deberás abordar la siguiente tarea.",
-        "seven": "Cuando hayas completado cuatro tareas o pomodoros, podrás realizar una pausa más larga, de unos 15 minutos aproximadamente. Después, deberás iniciar un nuevo bloque de cuatro tareas."
-    },
+    
     "title": {
         "manageEmo": "GESTIÓN DE EMOCIONES",
         "pomod": "TÉCNICA POMODORO",
         "taskTime": "TIEMPO DE TAREA"
-      
+    },
 
+    "gestionEmociones": {
+        "one": "6 técnicas para desarrollar la gestión emocional.",
+        "two": "1. Diferencia lo que puedes evitar de lo que puedes manejar.",
+        "three": "2. Aprende a enfocarte en tí y en el momento presente.",
+        "four": "3. Planifica solo el futuro inmediato.",
+        "five": "4. Gestiona las preocupaciones una vez al día.",
+        "six": "5. Plantea soluciones al peor de los escenarios.",
+        "seven": "6. Encuentra vías para escapar y drenar."
+    },
+
+    "pomodoroList": {
+        "one": "1. Divide la actividad en tareas.",
+        "two": "2. Una vez divididas, deberás jerarquizarlas. Es decir, priorizarlas y ordenarlas en consecuencia con su ejecución.",
+        "three": "3. Pon el temporizador a 25 minutos y ejecuta el método hasta que suene la alarma. La idea es mantenerte concentrado evitando cualquier distracción.",
+        "four": "4. 5 minutos de pausa corta en la que podrás hacer cualquier cosa.",
+        "five": "5. Deberás poner de nuevo el contador a 0 y programar tus siguientes 25 minutos de trabajo, donde abordarás la siguiente tarea.",
+        "six": "6. Cuando hayas completado cuatro tareas o pomodoros, podrás realizar una pausa más larga, de unos 15 minutos aproximadamente. Después, deberás iniciar un nuevo bloque de cuatro tareas."
+    },
+
+
+    "tasking": {
+        "one": "Fracción de tiompo a elegir para la gestion de tareas y emociones.",
+        "two": "1 hora",
+        "three": "2 horas",
+        "four": "3 horas",
+        "five": "4 horas"
     }
     
-
+    
     
 
 }
