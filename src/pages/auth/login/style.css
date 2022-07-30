@@ -25,7 +25,7 @@
 }
 
 .boton{
-    background: #3af506;
+    background: #06bdf5;
     border: 0;
     padding: 10px;
     color: #fff;
@@ -34,3 +34,16 @@
     cursor: pointer;
     margin-top: 7px;
 }
+.register{
+    background-color: rgb(240, 222, 58);
+    border: 0;
+    padding: 10px;
+    color: rgb(42, 15, 15);
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 12x;
+
+}
+

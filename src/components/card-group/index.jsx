@@ -14,13 +14,13 @@ function CardGroupResults (){
     <Card.Body>
       <Card.Title>{t("title.manageEmo")}</Card.Title>
       <Card.Text>
-       <p>6 técnicas para desarrollar la gestión emocional.</p>
-       <p>1. Diferencia lo que puedes evitar de lo que puedes manejar.</p>
-       <p>2. Aprende a enfocarte en tí y en el momento presente.</p>
-       <p>3. Planifica solo el futuro inmediato.</p>
-       <p>4. Gestiona las preocupaciones una vez al día.</p>
-       <p>5. Plantea soluciones al peor de los escenarios.</p>
-       <p>6. Encuentra vías para escapar y drenar.</p>
+       <p>{t("gestionEmociones.one")}</p>
+       <p>{t("gestionEmociones.two")}</p>
+       <p>{t("gestionEmociones.three")}</p>
+       <p>{t("gestionEmociones.four")}</p>
+       <p>{t("gestionEmociones.five")}</p>
+       <p>{t("gestionEmociones.six")}</p>
+       <p>{t("gestionEmociones.seven")}</p>
 
       </Card.Text>
     </Card.Body>
@@ -31,12 +31,12 @@ function CardGroupResults (){
     <Card.Body>
       <Card.Title>{t("title.pomod")}</Card.Title>
       <Card.Text>
-        <p>1. Divide la actividad en tareas.</p>
-        <p>2. Una vez divididas, deberás jerarquizarlas. Es decir, priorizarlas y ordenarlas en consecuencia con su ejecución."</p>
-        <p>3. Pon el temporizador a 25 minutos y ejecuta el método hasta que suene la alarma. La idea es mantenerte concentrado evitando cualquier distracción.</p>
-        <p>4. 5 minutos de pausa corta en la que podrás hacer cualquier cosa.</p>
-        <p>5. Deberás poner de nuevo el contador a 0 y programar tus siguientes 25 minutos de trabajo, donde abordarás la siguiente tarea.</p>
-        <p>6. Cuando hayas completado cuatro tareas o pomodoros, podrás realizar una pausa más larga, de unos 15 minutos aproximadamente. Después, deberás iniciar un nuevo bloque de cuatro tareas.</p>
+        <p>{t("pomodoroList.one")}</p>
+        <p>{t("pomodoroList.two")}</p>
+        <p>{t("pomodoroList.three")}</p>
+        <p>{t("pomodoroList.four")}</p>
+        <p>{t("pomodoroList.five")}</p>
+        <p>{t("pomodoroList.six")}</p>
       </Card.Text>
     </Card.Body>
   </Card>
@@ -46,11 +46,11 @@ function CardGroupResults (){
     <Card.Body>
       <Card.Title>{t("title.taskTime")} </Card.Title>
       <Card.Text>
-        <p>Fracción de tiompo a elegir para la gestion de tareas y emociones</p>
-        <p>1 hora.</p>
-        <p>2 horas.</p>
-        <p>3 horas.</p>
-        <p>4 horas.</p>
+        <p>{t("tasking.one")}</p>
+        <p>{t("tasking.two")}</p>
+        <p>{t("tasking.three")}</p>
+        <p>{t("tasking.four")}</p>
+        <p>{t("tasking.five")}</p>
         
         
       </Card.Text>

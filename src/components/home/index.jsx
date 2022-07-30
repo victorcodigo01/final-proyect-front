@@ -13,7 +13,7 @@ function Home (){
 
     return (
             <>
-            <Register></Register>
+            {/* <Register></Register> */}
             <Login></Login>
 
            {/* <button onClick={<Route path="auth/register" element={<Register />}></Route>}>Register</button>

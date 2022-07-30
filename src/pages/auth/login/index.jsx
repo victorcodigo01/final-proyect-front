@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../../core/auth/auth.hook";
+import './style.css';
+import { Link } from "react-router-dom";
 
  function Login (){
     //missing isLoading
@@ -16,13 +18,24 @@ import { useAuth } from "../../../core/auth/auth.hook";
         .then(() => navigate("/user")); //despues de logarme tengo que navegar
 
     }
+
+        
+      
+
+      
+
+      
+
+
     return (
         
-            <form className="formulario" onSubmit={handleLogin}>
-                        <input className="input"name="email" type="email" placeholder="Email" />
-                        <input className="input"name="pass" type="password" placeholder="Contraseña" />          
-                        <button className="boton" type="submit">Log In</button>
-                </form>
+        <form className="formulario" onSubmit={handleLogin}>
+                    <input className="input"name="email" type="email" placeholder="Email" />
+                    <input className="input"name="pass" type="password" placeholder="Contraseña" />          
+                    <button className="boton" type="submit">Log In</button>
+                    <button className="register" type="submit"><Link to="/auth/register">Register</Link></button>
+                    
+        </form>
         
     )
 }
