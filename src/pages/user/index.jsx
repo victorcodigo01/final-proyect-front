@@ -159,7 +159,7 @@ console.log('EMOTIONS',emotions)
 
                 <div >
                   <span className="options">
-                    <p>Hello world post 2</p>
+                    <p>Hello world post 22</p>
                     <i className="fa"><FaEdit/></i>
                     <i className="fas fa-trash-alt"><AiFillDelete/></i>
                   </span>
