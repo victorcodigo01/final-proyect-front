@@ -1,27 +1,26 @@
-.footer{
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: #1C3643;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #1c3643;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
- .privacidad {
+.privacidad {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  
- }
+}
 
- nav a {
-  color:rgb(7, 7, 6);
+nav a {
+  color: rgb(7, 7, 6);
   text-decoration: none;
-  }
+}

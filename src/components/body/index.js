@@ -1,15 +1,14 @@
-import React, { useContext } from 'react';
-import { themeContext } from '../../context/theme.context';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Placeholder from 'react-bootstrap/Placeholder';
+import React, { useContext } from "react";
+import { themeContext } from "../../context/theme.context";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Placeholder from "react-bootstrap/Placeholder";
 
-function Body (){
-  const { theme } = useContext(themeContext)
-    return(
-        <>
-        
-        {/* <div className={`d-flex p-5 justify-content-around bg-${theme}`}>
+function Body() {
+  const { theme } = useContext(themeContext);
+  return (
+    <>
+      {/* <div className={`d-flex p-5 justify-content-around bg-${theme}`}>
 // este div pinta el body
 
 
@@ -41,9 +40,8 @@ function Body (){
 
 
     </div> */}
-    
-        </>
-    )
+    </>
+  );
 }
 
 export default Body;

@@ -8,136 +8,118 @@ import Button from "react-bootstrap/esm/Button";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { useUser } from "../../core/users/user.hook";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import CardManageEmotion from "../../components/card";
 import CardEmotion from "../../components/card/card-emotion";
 import CardPomodoro from "../../components/card/card-pomo";
-import './styles.css';
+import "./styles.css";
 import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 
+function User() {
+  const [emotions, setEmotions] = useState([]);
+  const [emotionsFiltered, setEmotionsFiltered] = useState([]);
+  // console.log(emotions);
 
-
-
-
-function User () {
-
-
-
-const [emotions, setEmotions] = useState([])
-  const [emotionsFiltered, setEmotionsFiltered] = useState([])
-// console.log(emotions);
-  
-
-const [emotion, setEmotion] = useState([])
-  const [emotionFiltered, setEmotionFiltered] = useState([])
-// console.log(emotion);
-
-
-const [pomo, setPomo] = useState([])
-  const [pomoFiltered, setPomoFiltered] = useState([])
+  const [emotion, setEmotion] = useState([]);
+  const [emotionFiltered, setEmotionFiltered] = useState([]);
   // console.log(emotion);
 
+  const [pomo, setPomo] = useState([]);
+  const [pomoFiltered, setPomoFiltered] = useState([]);
+  // console.log(emotion);
 
-
-useEffect(()=>{
-
+  useEffect(() => {
     // fetch("http://localhost:3001/emotions-manage")
     fetch("https://pomonew.onrender.com/emotions-manage")
-    .then(res => res.json())
-    .then(data => {
-      setEmotions(data)
-      setEmotionsFiltered(data)
-      console.log(data);
-    })
-    },[])
+      .then((res) => res.json())
+      .then((data) => {
+        setEmotions(data);
+        setEmotionsFiltered(data);
+        console.log(data);
+      });
+  }, []);
 
+  useEffect(() => {
+    // fetch("http://localhost:3001/emotions")
+    fetch("https://pomonew.onrender.com/emotions")
+      .then((res) => res.json())
+      .then((data) => {
+        setEmotion(data);
+        setEmotionFiltered(data);
+        console.log(data);
+      });
+  }, []);
 
+  useEffect(() => {
+    // fetch("http://localhost:3001/pomodoro-technique")
+    fetch("https://pomonew.onrender.com/pomodoro-technique")
+      .then((res) => res.json())
+      .then((data) => {
+        setPomo(data);
+        setPomoFiltered(data);
+        console.log(data);
+      });
+  }, []);
 
-  useEffect(()=>{
+  const getTokenUser = sessionStorage.getItem("auth_token");
 
-// fetch("http://localhost:3001/emotions")
-fetch("https://pomonew.onrender.com/emotions")
-.then(res => res.json())
-.then(data => {
-  setEmotion(data)
-  setEmotionFiltered(data)
-  console.log(data);
-})
-},[])
+  const manageEmotions = emotions;
 
+  // LAS PROPS SON: manageEmotions, emotions y pomodoro dentro de los map
+  console.log("EMOTIONS", emotions);
 
-  useEffect(()=>{
+  // let form = document.getElementById("form");
+  // let input = document.getElementById("input");
+  // let msg = document.getElementById("msg");
+  // let posts = document.getElementById("posts");
 
-// fetch("http://localhost:3001/pomodoro-technique")
-fetch("https://pomonew.onrender.com/pomodoro-technique")
-.then(res => res.json())
-.then(data => {
-  setPomo(data)
-  setPomoFiltered(data)
-  console.log(data);
-})
-},[])
+  // form.addEventListener("submit", (e) => {
+  //   e.preventDefault();
+  //   console.log("button clicked");
 
-const getTokenUser = sessionStorage.getItem('auth_token');
-   
-const manageEmotions = emotions;
+  //   formValidation();
+  // });
 
-    // LAS PROPS SON: manageEmotions, emotions y pomodoro dentro de los map
-console.log('EMOTIONS',emotions)
+  // let formValidation = () => {
+  //   if (input.value === "") {
+  //     msg.innerHTML = "Post cannot be blank";
+  //     console.log("failure");
+  //   } else {
+  //     console.log("successs");
+  //     msg.innerHTML = "";
+  //   }
+  // };
 
+  return (
+    <>
+      <label>Sube una foto de perfil:</label>
+      <br></br>
+      <input
+        type="file"
+        className="b-photo"
+        id="avatar"
+        name="avatar"
+        accept="image/png, image/jpeg, image/jpg"
+      ></input>
 
+      <div className="d-flex flex-wrap justify-content-around">
+        {emotions.map((v, i) => (
+          <CardManageEmotion key={i} manageEmotions={v}></CardManageEmotion>
+        ))}
+      </div>
 
+      <div className="d-flex flex-wrap justify-content-between">
+        {emotion.map((v, i) => (
+          <CardEmotion key={i} emotions={v}></CardEmotion>
+        ))}
+      </div>
 
-// let form = document.getElementById("form");
-// let input = document.getElementById("input");
-// let msg = document.getElementById("msg");
-// let posts = document.getElementById("posts");
-
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   console.log("button clicked");
-
-//   formValidation();
-// });
-
-
-
-// let formValidation = () => {
-//   if (input.value === "") {
-//     msg.innerHTML = "Post cannot be blank";
-//     console.log("failure");
-//   } else {
-//     console.log("successs");
-//     msg.innerHTML = "";
-//   }
-// };
-
-
-    return (
-
-        <>
-        
-        <label>Sube una foto de perfil:</label>
-        <br></br>
-        <input type="file" className="b-photo"
-          id="avatar" name="avatar"
-          accept="image/png, image/jpeg, image/jpg"></input>
-          
-        <div className="d-flex flex-wrap justify-content-around">
-        {emotions.map((v,i)=>  <CardManageEmotion key={i} manageEmotions={v} ></CardManageEmotion>)}
-        </div>                                          
-
-        <div className="d-flex flex-wrap justify-content-between">
-        {emotion.map((v,i)=> <CardEmotion key={i} emotions={v} ></CardEmotion>)}
-        </div>
-
-        <div className="d-flex flex-wrap justify-content-between">
-        {pomo.map((v,i)=> <CardPomodoro key={i} pomodoro={v} ></CardPomodoro>)}
-        </div>
-       
-
-        
+      <div className="d-flex flex-wrap justify-content-between">
+        {pomo.map((v, i) => (
+          <CardPomodoro key={i} pomodoro={v}></CardPomodoro>
+        ))}
+      </div>
 
       {/* <h1>Escribe tu comentario</h1>
       <div className="container">
@@ -173,11 +155,9 @@ console.log('EMOTIONS',emotions)
           </div>
       </div> */}
 
-      
+      <CardGroup></CardGroup>
 
-        <CardGroup></CardGroup>
-        
-        {/* <Button className="btn btn-outline-secondary" onClick={() => {
+      {/* <Button className="btn btn-outline-secondary" onClick={() => {
         console.log('token', getTokenUser);
         // fetch('http://localhost:3001/users/delete', {
          fetch('https://pomoback-dev.onrender.com/users/delete', {
@@ -187,15 +167,8 @@ console.log('EMOTIONS',emotions)
               'Authorization': `Bearer ${getTokenUser}`
           },
       })}}>desaparecer</Button> */}
-    
-        </>
-        
-
-            
-            
-       
-        )
-
+    </>
+  );
 }
 
 export default User;
