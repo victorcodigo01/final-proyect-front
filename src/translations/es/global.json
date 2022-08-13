@@ -47,9 +47,21 @@
         "three": "2 horas",
         "four": "3 horas",
         "five": "4 horas"
+    },
+
+    "buttons": {
+        "one": "Iniciar sesión",
+        "two": "Registrarse"
+    },
+
+    "placeholders": {
+        "one": "Correo electrónico",
+        "two": "Contraseña"
+    }
+
     }
     
     
     
+    
 
-}

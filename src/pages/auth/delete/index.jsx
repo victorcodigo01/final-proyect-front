@@ -5,10 +5,13 @@ import './style.css'
 
 function DeleteUser (){
 
+
     const {deleting, isDeleting, isAuth} = useAuth();
     const [DeletedUser, setDeletedUser] = useState(false);
     const navigate = useNavigate();
     if(isAuth) navigate("/"); //si entro al registro logado no me lo debe permitir
+
+    
 
     const handleSubmit = (e) => {
         e.preventDefault();

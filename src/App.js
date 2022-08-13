@@ -20,6 +20,8 @@ import { ThemeProvider } from "./context/theme.context"
 import Body from './components/body';
 import Card from './components/card';
 import DeleteUser from './pages/auth/delete';
+import UserPhoto from './usersPic';
+
 
    
 
