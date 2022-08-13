@@ -1,0 +1,74 @@
+ {
+    "header":{
+        "hello-world":"Hello World",
+        "home": "Home"
+    },
+
+    "cards":{
+        "joy": "Feeling that manifests itself from a good state of mind, involves satisfaction and is accompanied by a smile or laugh",
+        "sorrow": "Sensation of emotional pain, caused by a triggering factor and leading to thoughts with a pessimistic tone.",
+        "anger": "Primary emotion that indicates a very great anger against a person or situation.",
+        "surprise": "Emotional disturbance caused by something unforeseen or unexpected.",
+        "exposed": "Put something or someone so that it can be seen by others",
+        "blurred": "The person is not distinguished clearly in the picture.",
+        "headwear": "The person in the photo has his head covered and his features cannot be recognized."
+
+    },
+
+    "pomodoro":{
+        "step-one": "Divide the activity into tasks.",
+        "step-two": "Once divided, you must rank them. That is, prioritize them and order them accordingly with their execution.",
+        "step-three": "Set the timer to 25 minutes and run the method until the alarm goes off. The idea is to stay focused and work intensively during this period of time, avoiding any distractions.",
+        "step-four": "When the alarm sounds, you must write down or mark the task done and rest for 5 minutes, you can also set the timer with the countdown.",
+        "step-five": "During the short break you can do whatever you want, except work on the next task.",
+        "step-six": "Once the break time is over, you must reset the counter to 0 and schedule your next 25 minutes of work, where you must tackle the next task.",
+        "step-seven": "When you have completed four tasks or pomodoros, you can take a longer break, of about 15 minutes. Next, you'll need to start a new block of four tasks."
+    },
+
+
+    "title": {
+        "manageEmo": "MANAGEMENT OF EMOTIONS",
+        "pomod": "POMODORO TECHNIQUE",
+        "taskTime": "TASK TIME"
+    },
+
+    "gestionEmociones": {
+        "one": "6 techniques to develop emotional management.",
+        "two": "1. Differentiate what you can avoid from what you can manage.",
+        "three": "2. Learn to focus on yourself and the present moment.",
+        "four": "3. Plan only the immediate future.",
+        "five": "4. Manage worries once a day.",
+        "six": "5. Proposes solutions to worst case scenarios.",
+        "seven": "6. Find ways to escape and drain."
+    },
+
+    "pomodoroList": {
+        "one": "1. Divide the activity into tasks.",
+        "two": "2. Once divided, you must rank them. That is, prioritize them and order them accordingly with their execution.",
+        "three": "3. Set the timer to 25 minutes and run the method until the alarm goes off. The idea is to keep you focused by avoiding any distractions.",
+        "four": "4. 5 minutes of short break in which you can do anything.",
+        "five": "5. You must put the counter back to 0 and schedule your next 25 minutes of work, where you will tackle the next task.",
+        "six": "6. When you have completed four tasks or pomodoros, you can take a longer break, of about 15 minutes. Next, you'll need to start a new block of four tasks."
+        
+    },
+
+    "tasking": {
+        "one": "Fraction of time to choose for the management of tasks and emotions.",
+        "two": "1 hour",
+        "three": "2 hours",
+        "four": "3 hours",
+        "five": "4 hours"
+    },
+
+    "buttons": {
+        "one": "Log in",
+        "two": "Register"
+    },
+
+    "placeholders": {
+        "one": "Email",
+        "two": "Password"
+    }
+   
+
+}
