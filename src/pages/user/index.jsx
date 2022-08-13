@@ -19,6 +19,7 @@ import { AiFillDelete } from "react-icons/ai";
 
 
 
+
 function User () {
 
 
@@ -42,7 +43,7 @@ const [pomo, setPomo] = useState([])
 useEffect(()=>{
 
     // fetch("http://localhost:3001/emotions-manage")
-    fetch("https://example-pomodoro-emot.onrender.com")
+    fetch("https://pomonew.onrender.com/emotions-manage")
     .then(res => res.json())
     .then(data => {
       setEmotions(data)
@@ -56,7 +57,7 @@ useEffect(()=>{
   useEffect(()=>{
 
 // fetch("http://localhost:3001/emotions")
-fetch("https://example-pomodoro-emot.onrender.com")
+fetch("https://pomonew.onrender.com/emotions")
 .then(res => res.json())
 .then(data => {
   setEmotion(data)
@@ -69,7 +70,7 @@ fetch("https://example-pomodoro-emot.onrender.com")
   useEffect(()=>{
 
 // fetch("http://localhost:3001/pomodoro-technique")
-fetch("https://example-pomodoro-emot.onrender.com")
+fetch("https://pomonew.onrender.com/pomodoro-technique")
 .then(res => res.json())
 .then(data => {
   setPomo(data)
@@ -84,6 +85,9 @@ const manageEmotions = emotions;
 
     // LAS PROPS SON: manageEmotions, emotions y pomodoro dentro de los map
 console.log('EMOTIONS',emotions)
+
+
+
 
 // let form = document.getElementById("form");
 // let input = document.getElementById("input");
@@ -114,7 +118,12 @@ console.log('EMOTIONS',emotions)
 
         <>
         
-        
+        <label>Sube una foto de perfil:</label>
+        <br></br>
+        <input type="file" className="b-photo"
+          id="avatar" name="avatar"
+          accept="image/png, image/jpeg, image/jpg"></input>
+          
         <div className="d-flex flex-wrap justify-content-around">
         {emotions.map((v,i)=>  <CardManageEmotion key={i} manageEmotions={v} ></CardManageEmotion>)}
         </div>                                          
@@ -128,13 +137,9 @@ console.log('EMOTIONS',emotions)
         </div>
        
 
-        <label>Sube una foto de perfil:</label>
-        <br></br>
-        <input type="file" className="b-photo"
-          id="avatar" name="avatar"
-          accept="image/png, image/jpeg, image/jpg"></input>
+        
 
-      <h1>Escribe tu comentario</h1>
+      {/* <h1>Escribe tu comentario</h1>
       <div className="container">
 
           <div className="left">
@@ -166,22 +171,22 @@ console.log('EMOTIONS',emotions)
                 </div>
             </div>
           </div>
-      </div>
+      </div> */}
 
       
 
         <CardGroup></CardGroup>
         
-        <Button className="btn btn-outline-secondary" onClick={() => {
+        {/* <Button className="btn btn-outline-secondary" onClick={() => {
         console.log('token', getTokenUser);
         // fetch('http://localhost:3001/users/delete', {
-         fetch('https://example-pomodoro-emot.onrender.com', {
+         fetch('https://pomoback-dev.onrender.com/users/delete', {
           method: "DELETE", 
           headers: {
               "Content-type": 'application/json',
               'Authorization': `Bearer ${getTokenUser}`
           },
-      })}}>desaparecer</Button>
+      })}}>desaparecer</Button> */}
     
         </>
         

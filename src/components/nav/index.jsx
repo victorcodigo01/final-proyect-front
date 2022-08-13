@@ -7,7 +7,7 @@ function Navega () {
      const [color,setColor] = useState("light")
      const [t, i18n] = useTranslation("global");
     
-    const { theme,toggleTheme } = useContext(themeContext);
+    const {theme,toggleTheme } = useContext(themeContext);
     
     return (
         <>

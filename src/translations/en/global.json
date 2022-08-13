@@ -58,8 +58,17 @@
         "three": "2 hours",
         "four": "3 hours",
         "five": "4 hours"
-    }
+    },
 
+    "buttons": {
+        "one": "Log in",
+        "two": "Register"
+    },
+
+    "placeholders": {
+        "one": "Email",
+        "two": "Password"
+    }
    
 
 }
