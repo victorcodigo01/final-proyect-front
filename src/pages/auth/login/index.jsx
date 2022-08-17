@@ -19,6 +19,9 @@ function Login() {
       email: e.target.email.value,
       password: e.target.pass.value,
     };
+
+    //console.log(user.password);
+
     login(user).then(() => navigate("/user")); //despues de logarme tengo que navegar
     // https://pomoback-dev.onrender.com/user
     //("/user")
@@ -41,7 +44,7 @@ function Login() {
       <button className="boton" type="submit">
         {t("buttons.one")}
       </button>
-      <button className="register" type="submit">
+      <button className="register">
         <Link to="/auth/register">{t("buttons.two")}</Link>
       </button>
     </form>

@@ -10,7 +10,7 @@ function CardManageEmotion({ manageEmotions }) {
       <Card className="mt-5 mb-5 card_main" style={{ width: "27rem" }}>
         <Card.Img
           variant="top"
-          src={`https://pomonew.onrender.com/${manageEmotions.img}`}
+          src={`https://pomonew.onrender.com/static/${manageEmotions.img}`}
         />
 
         {/* src={`http://localhost:3001/static/${manageEmotions.img}`} */}

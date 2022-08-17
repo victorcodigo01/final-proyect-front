@@ -69,7 +69,7 @@ function User() {
   // LAS PROPS SON: manageEmotions, emotions y pomodoro dentro de los map
   console.log("EMOTIONS", emotions);
 
-  // let form = document.getElementById("form");
+  // let form = document.getElementById("form");hola
   // let input = document.getElementById("input");
   // let msg = document.getElementById("msg");
   // let posts = document.getElementById("posts");
