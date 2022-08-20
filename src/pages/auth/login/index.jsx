@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../../core/auth/auth.hook";
 import "./style.css";
@@ -10,7 +11,9 @@ function Login() {
   //missing isLoading
   const { isAuth, login } = useAuth();
   const navigate = useNavigate();
-  if (isAuth) navigate("/"); //si entro al registro logado no me lo debe permitir
+  useEffect(() => {
+    if (isAuth) navigate("/"); //si entro al registro logado no me lo debe permitir
+  }, [isAuth, navigate]);
   //("/")
   //https://pomoback-dev.onrender.com/
   const handleLogin = (e) => {
@@ -22,13 +25,13 @@ function Login() {
 
     //console.log(user.password);
 
-    login(user).then(() => navigate("/user")); //despues de logarme tengo que navegar
+    login(user).then(() => navigate("/")); //despues de logarme tengo que navegar
     // https://pomoback-dev.onrender.com/user
     //("/user")
   };
 
   return (
-    <form className="formulario" onSubmit={handleLogin}>
+    <form className="formulario flex-fill" onSubmit={handleLogin}>
       <input
         className="input"
         name="email"

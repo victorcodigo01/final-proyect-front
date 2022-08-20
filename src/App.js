@@ -10,10 +10,9 @@ import Header from "./shared/header";
 import Footer from "./shared/footer";
 import PrivacyPolicy from "./shared/footer/privacy-policy";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./components/home";
 import Navega from "./components/nav";
 import { ThemeProvider } from "./context/theme.context";
-import Body from "./components/body";
+
 import Card from "./components/card";
 import DeleteUser from "./pages/auth/delete";
 import UserPhoto from "./usersPic";
@@ -21,29 +20,29 @@ import UserPhoto from "./usersPic";
 function App() {
   return (
     <BrowserRouter>
-      <Navega></Navega>
-      <Body></Body>
+      <div className="min-vh-100 d-flex flex-column">
+        <Navega></Navega>
 
-      <Routes>
-        <Route path="/" element={<Home></Home>} />
-        <Route path="/validate" element={<Validate />} />
-        <Route
-          path="/user"
-          element={
-            <RequireAuth>
-              <User />
-            </RequireAuth>
-          }
-        />
-        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <RequireAuth>
+                <User />
+              </RequireAuth>
+            }
+          />
+          <Route path="/validate" element={<Validate />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
 
-        <Route path="/auth">
-          <Route path="register" element={<Register />}></Route>
-          <Route path="login" element={<Login />}></Route>
-          <Route path="delete" element={<DeleteUser />}></Route>
-        </Route>
-      </Routes>
-      <Footer></Footer>
+          <Route path="/auth">
+            <Route path="register" element={<Register />}></Route>
+            <Route path="login" element={<Login />}></Route>
+            <Route path="delete" element={<DeleteUser />}></Route>
+          </Route>
+        </Routes>
+        <Footer></Footer>
+      </div>
     </BrowserRouter>
   );
 }
