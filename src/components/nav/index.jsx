@@ -5,9 +5,18 @@ import { Navbar, Container, Button, Form } from "react-bootstrap";
 
 function Navega() {
   const [color, setColor] = useState("light");
+  const [lang, setLang] = useState("es");
   const [t, i18n] = useTranslation("global");
 
   const { theme, toggleTheme } = useContext(themeContext);
+
+  function handleToggleLang() {
+    setLang((l) => {
+      const newLang = l === "es" ? "en" : "es";
+      i18n.changeLanguage(newLang);
+      setLang(newLang);
+    });
+  }
 
   return (
     <>
@@ -16,7 +25,19 @@ function Navega() {
           <Navbar.Brand href="#home">Pomodoros App</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
-            <Form className="d-flex justify-content-between">
+            <Form className="d-flex justify-content-between align-items-center">
+              <Form.Check
+                type="switch"
+                id="custom-switch"
+                label="Theme"
+                className="me-4"
+                onChange={() => toggleTheme()}
+              />
+              <Button variant="outline-success" onClick={handleToggleLang}>
+                {lang === "en" ? "EN" : "ES"}
+              </Button>
+            </Form>
+            {/* <Form className="d-flex justify-content-between">
               <Form.Check
                 type="switch"
                 id="custom-switch"
@@ -38,7 +59,7 @@ function Navega() {
                   EN
                 </Button>
               </Container>
-            </Form>
+            </Form> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

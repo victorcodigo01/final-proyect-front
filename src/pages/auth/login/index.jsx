@@ -14,8 +14,7 @@ function Login() {
   useEffect(() => {
     if (isAuth) navigate("/"); //si entro al registro logado no me lo debe permitir
   }, [isAuth, navigate]);
-  //("/")
-  //https://pomoback-dev.onrender.com/
+
   const handleLogin = (e) => {
     e.preventDefault();
     const user = {
@@ -26,8 +25,6 @@ function Login() {
     //console.log(user.password);
 
     login(user).then(() => navigate("/")); //despues de logarme tengo que navegar
-    // https://pomoback-dev.onrender.com/user
-    //("/user")
   };
 
   return (

@@ -14,7 +14,7 @@ function CardManageEmotion({ manageEmotions }) {
         />
 
         {/* src={`http://localhost:3001/static/${manageEmotions.img}`} */}
-        {/* src={`https://pomoback-dev.onrender.com/static/${manageEmotions.img}`} */}
+
         <Card.Body>
           <Card.Title>{manageEmotions.title}</Card.Title>
           <Card.Text className="card_text">
@@ -22,7 +22,6 @@ function CardManageEmotion({ manageEmotions }) {
               <p>{v}</p>
             ))}
           </Card.Text>
-          {/* <Button variant="primary">Go somewhere</Button> */}
         </Card.Body>
       </Card>
     </>

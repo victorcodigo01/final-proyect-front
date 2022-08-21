@@ -12,8 +12,7 @@ function Register() {
   const [showEmailConfirm, updateshowEmailConfirm] = useState(false);
   const navigate = useNavigate();
   if (isAuth) navigate("/"); //si entro al registro logado no me lo debe permitir
-  //("/")
-  //https://pomoback-dev.onrender.com/
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const user = {
@@ -33,18 +32,18 @@ function Register() {
           ) : (
             ""
           )}
-          <form className="formularios" onSubmit={handleSubmit}>
+          <form className="formularios flex-fill" onSubmit={handleSubmit}>
             <input
               className="input"
               name="email"
               type="email"
-              placeholder="Email"
+              placeholder={t("placeholders.one")}
             />
             <input
               className="input"
               name="pass"
               type="password"
-              placeholder="Contraseña"
+              placeholder={t("placeholders.two")}
             />
             <button className="boton" type="submit">
               {t("buttons.two")}
