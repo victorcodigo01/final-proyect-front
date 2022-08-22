@@ -45,6 +45,27 @@
     "one": "Privacy Policy"
   },
 
+  "PrivacyText": {
+    "one": "Privacy Policy",
+    "two": "Victor Martin informs you about its Privacy Policy regarding the treatment and protection of personal data of users and customers that may be collected by browsing or contracting services through the Pomodoros App.",
+    "three": "In this sense, the Owner guarantees compliance with current regulations on the protection of personal data, reflected in Organic Law 3/2018, of December 5, on the Protection of Personal Data and the Guarantee of Digital Rights (LOPD GDD) . It also complies with Regulation (EU) 2016/679 of the European Parliament and of the Council of April 27, 2016 regarding the protection of natural persons (RGPD).",
+    "four": "The use of the website implies acceptance of this Privacy Policy as well as the conditions included in the Legal Notice.",
+    "five": "Principles applied in data processing",
+    "six": "In the processing of your personal data, the Owner will apply the following principles that comply with the requirements of the new European data protection regulation:",
+    "seven": "Principle of legality, loyalty and transparency: The Holder will always require consent for the processing of your personal data, which may be for one or more specific purposes about which you will be previously informed with absolute transparency.",
+    "eight": "Principle of data minimization: The Holder will always treat personal data in a lawful, transparent and correct manner, with the aim of guaranteeing maximum security and confidentiality.",
+    "nine": "Principle of limitation of responsibility: The Owner undertakes not to process your personal data for purposes other than those provided for in this Privacy Policy.",
+    "ten": "Principle of limitation of the term of conservation: The data will be kept for the time strictly necessary for the purpose or purposes of the treatment.",
+    "eleven": "The Holder will inform you of the corresponding conservation period according to the purpose. In the case of subscriptions, the Holder will periodically review the lists and will eliminate those records that are inactive for a considerable time.",
+    "twelve": "Principle of integrity and confidentiality: Your data will be treated in such a way that its security, confidentiality and integrity is guaranteed. You should know that the Holder takes the necessary precautions to prevent unauthorized access or improper use of the data of its users by third parties.",
+    "thirteen": "Security of personal data",
+    "fourteen": "To protect your personal data, the Holder takes all reasonable precautions and follows the best industry practices to prevent their loss, misuse, improper access, disclosure, alteration or destruction of the same.",
+    "fifteen": "The website is hosted on Netlify and Render. The security of your data is guaranteed, since they take all the necessary security measures for it. You can consult their privacy policy for more information.",
+    "sixteen": "Changes in the Privacy Policy",
+    "seventeen": "The Owner reserves the right to modify this Privacy Policy to adapt it to new legislation or jurisprudence, as well as industry practices.",
+    "eighteen": "These policies will be in force until they are modified by others duly published."
+  },
+
   "gestionEmociones": {
     "one": "6 techniques to develop emotional management.",
     "two": "1. Differentiate what you can avoid from what you can manage.",
