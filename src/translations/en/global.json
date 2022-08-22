@@ -30,6 +30,21 @@
     "taskTime": "TASK TIME"
   },
 
+  "titleCards": {
+    "one": "Sad",
+    "two": "Happy",
+    "three": "Anxiety",
+    "four": "Fear"
+  },
+
+  "theme": {
+    "one": "Theme"
+  },
+
+  "PolitcsPrivacy": {
+    "one": "Privacy Policy"
+  },
+
   "gestionEmociones": {
     "one": "6 techniques to develop emotional management.",
     "two": "1. Differentiate what you can avoid from what you can manage.",
@@ -65,5 +80,31 @@
   "placeholders": {
     "one": "Email",
     "two": "Password"
+  },
+
+  "sadCard": {
+    "one": "Don't deny it, deal with it. Let your body express what it feels with total freedom, bring out what it has inside.",
+    "two": "You must understand what is happening to you and accept it. You need to find solutions to get ahead. Don't victimize yourself or blame yourself.",
+    "three": "Find your purpose. It is necessary to work on self-knowledge to identify what motivates us and what we want to achieve.",
+    "four": "Give yourself time. Overcoming sadness is not easy, so be patient with yourself. Every little achievement you have to celebrate. Be constant."
+  },
+
+  "happyCard": {
+    "one": "It is important to value all the positive aspects of work: autonomy, flexibility, conciliation, teamwork.",
+    "two": "When in doubt, ask. Chat, share experiences. Teamwork is proven to increase productivity.",
+    "three": "Working does not imply being bored in an office. You have to have fun working, learn from other colleagues, a good working environment is key to feel fulfilled."
+  },
+
+  "anxietyCard": {
+    "one": "Meditate 10 minutes. It doesn't matter where you are. Close your eyes and focus on your breath. Try to make your mind blank.",
+    "two": "Move on. A few minutes of physical activity can make a difference. Dance, jump, seek to disconnect from the situation for a moment.",
+    "three": "Recuerda algo gracioso o simplemente haz el gesto de reírte. Tu cuerpo comenzará a liberar endorfinas y relajar músculos.",
+    "four": "Comparte lo que sientes. Da la impresión de que está mal visto expresar una cierta debilidad. ¿Sabías que esconderlo puede aumentar los síntomas que sientes?"
+  },
+
+  "fearCard": {
+    "one": "Acknowledge that emotion as a true ally. Fear informs about a situation in which there is a risk. It helps us see a point of reality important to ourselves and our safety.",
+    "two": "You must evaluate if it is a feeling that is adequate to reality or if we may be feeling it excessively. If this fear is not real, we must change the perception. Find what emotion would be the right one to feel.",
+    "three": "When we feel fear it makes us avoid social contact or stay without looking for new challenges. We can learn to manage it, if we take action. Success is on the other side of fear."
   }
 }

@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { themeContext } from "../../context/theme.context";
 import { Navbar, Container, Button, Form } from "react-bootstrap";
 import "./styles.css";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const [color, setColor] = useState("light");
   const { theme, toggleTheme } = useContext(themeContext);
+  const [t, i18n] = useTranslation("global");
 
   return (
     <>
@@ -17,7 +19,7 @@ const Footer = () => {
       >
         <nav className="text-light">
           {/* <a href="/privacy">Politica de Privacidad</a> */}
-          <Link to="/privacy">Politica de Privacidad</Link>
+          <Link to="/privacy">{t("PolitcsPrivacy.one")}</Link>
         </nav>
       </Navbar>
     </>

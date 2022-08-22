@@ -29,7 +29,7 @@ function Navega() {
               <Form.Check
                 type="switch"
                 id="custom-switch"
-                label="Theme"
+                label={t("theme.one")}
                 className="me-4"
                 onChange={() => toggleTheme()}
               />

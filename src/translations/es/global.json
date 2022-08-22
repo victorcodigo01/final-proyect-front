@@ -20,6 +20,21 @@
     "taskTime": "TIEMPO DE TAREA"
   },
 
+  "titleCards": {
+    "one": "Tristeza",
+    "two": "Felicidad",
+    "three": "Ansiedad",
+    "four": "Miedo"
+  },
+
+  "theme": {
+    "one": "Tema"
+  },
+
+  "PolitcsPrivacy": {
+    "one": "Política de Privacidad"
+  },
+
   "gestionEmociones": {
     "one": "6 técnicas para desarrollar la gestión emocional.",
     "two": "1. Diferencia lo que puedes evitar de lo que puedes manejar.",
@@ -55,5 +70,31 @@
   "placeholders": {
     "one": "Correo electrónico",
     "two": "Contraseña"
+  },
+
+  "sadCard": {
+    "one": "No la niegues, lidia con ella. Deja que tu cuerpo exprese lo que siente con total libertad, que saque lo que lleva dentro.",
+    "two": "Debes entender lo que te pasa y aceptarlo. Necesitas buscar soluciones para salir adelante. No te victimices ni busques culpables.",
+    "three": "Encuentra tu propósito. Es necesario trabajar el autoconocimiento para identificar lo que nos motiva y queremos lograr.",
+    "four": "Date tiempo. Superar la tristeza no es fácil, así que ten paciencia contigo mismo. Cada pequeño logro tienes que celebrarlo. Se constante."
+  },
+
+  "happyCard": {
+    "one": "Es importante valorar todos los aspectos positivos del trabajo: la autonomía, su flexibilidad, conciliación, el trabajo en equipo.",
+    "two": "Ante cualquier duda, pregunta. Charla, comparte experiencias. Está comprobado que el compañerismo aumenta la productividad.",
+    "three": "Trabajar no implica aburrirse en una oficina. Hay que divertirse trabajando, aprender del resto de compañeros, el buen clima laboral es clave sentirse pleno."
+  },
+
+  "anxietyCard": {
+    "one": "Medita 10 minutos. No importa dónde te encuentres. Cierra los ojos y concéntrate en tu respiración. Trata de poner tu mente en blanco.",
+    "two": "Muévete. Unos minutos de actividad física pueden marcar la diferencia. Baila, salta, busca desconectar de la situación por un momento.",
+    "three": "Recuerda algo gracioso o simplemente haz el gesto de reírte. Tu cuerpo comenzará a liberar endorfinas y relajar músculos.",
+    "four": "Comparte lo que sientes. Da la impresión de que está mal visto expresar una cierta debilidad. ¿Sabías que esconderlo puede aumentar los síntomas que sientes?"
+  },
+
+  "fearCard": {
+    "one": "Reconoce esa emoción como una verdadera aliada. El miedo informa sobre una situación en la que hay un riesgo. Nos ayuda a ver un punto de la realidad importante para nosotros mismos y nuestra seguridad.",
+    "two": "Debes evaluar si se trata de un sentimiento adecuado a la realidad o si podemos estar sintiéndolo desmesuradamente. Si este miedo no fuera real, debemos cambiar la percepción. Buscar qué emoción sería la adecuada sentir.",
+    "three": "Cuando sentimos miedo nos hace evitar el contacto social o quedarnos sin buscar nuevos retos. Podemos aprender a manejarlo, si tomamos acción. El éxito está al otro lado del miedo."
   }
 }

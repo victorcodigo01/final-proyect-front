@@ -12,7 +12,6 @@ function CardManageEmotion({ manageEmotions }) {
           variant="top"
           src={`https://pomonew.onrender.com/static/${manageEmotions.img}`}
         />
-
         {/* src={`http://localhost:3001/static/${manageEmotions.img}`} */}
 
         <Card.Body>

@@ -1,7 +1,14 @@
 .card_main {
-  background-color: rgb(235, 197, 136) !important;
   border-radius: 10px !important;
   overflow: hidden;
+  box-shadow: 3px 5px 20px -10px rgba(8, 8, 8, 0.75);
+  -webkit-box-shadow: 3px 5px 20px -10px rgba(8, 8, 8, 0.75);
+  -moz-box-shadow: 3px 5px 20px -10px rgba(8, 8, 8, 0.75);
 }
+/* -webkit- y -moz- vienen de buscar "box shadow" en caniuse.com */
 
-/*  */
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}

@@ -48,3 +48,8 @@
   margin-top: 12px;
   margin-bottom: 12x;
 }
+
+button a {
+  color: rgb(59, 41, 41);
+  text-decoration: none;
+}

@@ -71,17 +71,8 @@ function User() {
 
   return (
     <>
-      <label>Sube una foto de perfil:</label>
-      <br></br>
-      <input
-        type="file"
-        className="b-photo"
-        id="avatar"
-        name="avatar"
-        accept="image/png, image/jpeg, image/jpg"
-      ></input>
-
-      <div className="d-flex flex-wrap justify-content-around">
+      {/* <div className="d-flex flex-wrap justify-content-around"> */}
+      <div className="d-flex flex-wrap justify-content-center gap-4">
         {emotions.map((v, i) => (
           <CardManageEmotion key={i} manageEmotions={v}></CardManageEmotion>
         ))}
@@ -98,40 +89,6 @@ function User() {
           <CardPomodoro key={i} pomodoro={v}></CardPomodoro>
         ))}
       </div>
-
-      {/* <h1>Escribe tu comentario</h1>
-      <div className="container">
-
-          <div className="left">
-            <form id="form">
-              <textarea name="post" id="input" cols="30" rows="10"></textarea>
-              <br></br>
-              <div id="msg"></div>
-              <button type="submit" className="but"> Post </button>
-            </form>
-          </div>
-          
-          <div className="right">
-            <h3>Tus comentarios aquí</h3>
-              <div id="posts">
-                <div>
-                  <span className="options">
-                    <p>Hello world post 1</p>
-                    <i className="fa"><FaEdit/></i>
-                    <i className="fas fa-trash-alt"><AiFillDelete/></i>
-                  </span>
-                </div>
-
-                <div >
-                  <span className="options">
-                    <p>Hello world post 22</p>
-                    <i className="fa"><FaEdit/></i>
-                    <i className="fas fa-trash-alt"><AiFillDelete/></i>
-                  </span>
-                </div>
-            </div>
-          </div>
-      </div> */}
 
       <CardGroup></CardGroup>
 
