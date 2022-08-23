@@ -73,35 +73,10 @@ function User() {
     <>
       {/* <div className="d-flex flex-wrap justify-content-around"> */}
       <div className="d-flex flex-wrap justify-content-center gap-4">
-        {emotions.map((v, i) => (
-          <CardManageEmotion key={i} manageEmotions={v}></CardManageEmotion>
-        ))}
-      </div>
-
-      <div className="d-flex flex-wrap justify-content-between">
-        {emotion.map((v, i) => (
-          <CardEmotion key={i} emotions={v}></CardEmotion>
-        ))}
-      </div>
-
-      <div className="d-flex flex-wrap justify-content-between">
-        {pomo.map((v, i) => (
-          <CardPomodoro key={i} pomodoro={v}></CardPomodoro>
-        ))}
+        <CardManageEmotion></CardManageEmotion>
       </div>
 
       <CardGroup></CardGroup>
-
-      {/* <Button className="btn btn-outline-secondary" onClick={() => {
-        console.log('token', getTokenUser);
-        // fetch('http://localhost:3001/users/delete', {
-         fetch('https://pomoback-dev.onrender.com/users/delete', {
-          method: "DELETE", 
-          headers: {
-              "Content-type": 'application/json',
-              'Authorization': `Bearer ${getTokenUser}`
-          },
-      })}}>desaparecer</Button> */}
     </>
   );
 }
