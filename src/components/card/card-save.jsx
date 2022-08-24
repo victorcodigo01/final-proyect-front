@@ -99,7 +99,7 @@ export default User;
 
 {/*`https://pomonew.onrender.com/static/${manageEmotions.img}`*/}
          {/* src={`http://localhost:3001/static/${manageEmotions.img}`} */
-         
+
 {/* {manageEmotions.emotionsManage.map((v) => (
               <p>{v}</p>
             ))} */}

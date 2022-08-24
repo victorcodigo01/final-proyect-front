@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../../core/auth/auth.hook";
 import "./style.css";
@@ -9,8 +10,10 @@ function Login() {
   // console.log('acceso al login');
   const [t, i18n] = useTranslation("global");
   //missing isLoading
-  const { isAuth, login } = useAuth();
+  const { isAuth, isLoading, login } = useAuth();
+  const [showLoginConfirm, updateshowLoginConfirm] = useState(false);
   const navigate = useNavigate();
+
   useEffect(() => {
     if (isAuth) navigate("/"); //si entro al registro logado no me lo debe permitir
   }, [isAuth, navigate]);
@@ -28,26 +31,39 @@ function Login() {
   };
 
   return (
-    <form className="formulario flex-fill" onSubmit={handleLogin}>
-      <input
-        className="input"
-        name="email"
-        type="email"
-        placeholder={t("placeholders.one")}
-      />
-      <input
-        className="input"
-        name="pass"
-        type="password"
-        placeholder={t("placeholders.two")}
-      />
-      <button className="boton" type="submit">
-        {t("buttons.one")}
-      </button>
-      <button className="register">
-        <Link to="/auth/register">{t("buttons.two")}</Link>
-      </button>
-    </form>
+    <>
+      {/* {isLoading ? (
+        <h2 className="redText">Email incorrecto.</h2>
+      ) : ( */}
+      <>
+        {showLoginConfirm ? (
+          <p className="redText">Tu login es incorrecto</p>
+        ) : (
+          ""
+        )}
+
+        <form className="formulario flex-fill" onSubmit={handleLogin}>
+          <input
+            className="input"
+            name="email"
+            type="email"
+            placeholder={t("placeholders.one")}
+          />
+          <input
+            className="input"
+            name="pass"
+            type="password"
+            placeholder={t("placeholders.two")}
+          />
+          <button className="boton" type="submit">
+            {t("buttons.one")}
+          </button>
+          <button className="register">
+            <Link to="/auth/register">{t("buttons.two")}</Link>
+          </button>
+        </form>
+      </>
+    </>
   );
 }
 

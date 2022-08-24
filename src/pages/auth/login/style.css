@@ -53,3 +53,7 @@ button a {
   color: rgb(59, 41, 41);
   text-decoration: none;
 }
+
+.redText {
+  color: rgb(255, 0, 0);
+}

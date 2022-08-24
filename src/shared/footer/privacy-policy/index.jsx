@@ -11,7 +11,7 @@ function PrivacyPolicy() {
       <p>{t("PrivacyText.four")}</p>
 
       <h2>{t("PrivacyText.five")}</h2>
-      <p>{t("PrivacyText.six")}</p>
+      <h6>{t("PrivacyText.six")}</h6>
       <ul>
         <li>{t("PrivacyText.seven")}</li>
         <li>{t("PrivacyText.eight")}</li>
@@ -25,8 +25,9 @@ function PrivacyPolicy() {
       <p>{t("PrivacyText.fifteen")}</p>
 
       <h2>{t("PrivacyText.sixteen")}</h2>
-      <p>{t("PrivacyText.seventeen")}</p>
-      <p>{t("PrivacyText.eighteen")}</p>
+      <p>
+        {t("PrivacyText.seventeen")} {t("PrivacyText.eighteen")}
+      </p>
     </div>
   );
 }
