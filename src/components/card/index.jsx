@@ -7,7 +7,7 @@ function CardManageEmotion({ manageEmotions }) {
   console.log("TIPO DE DATO", manageEmotions);
   return (
     <>
-      <Card className="mt-5 mb-5 card_main" style={{ width: "27rem" }}>
+      <Card className="card_main" style={{ width: "27rem" }}>
         <Card.Img
           variant="top"
           src="https://cdn-prod.medicalnewstoday.com/content/images/articles/320/320562/a-sad-woman-looking-out-of-the-window.jpg"
@@ -24,7 +24,7 @@ function CardManageEmotion({ manageEmotions }) {
         </Card.Body>
       </Card>
 
-      <Card className="mt-5 mb-5 card_main" style={{ width: "27rem" }}>
+      <Card className="card_main" style={{ width: "27rem" }}>
         <Card.Img
           variant="top"
           src="https://images.theconversation.com/files/304963/original/file-20191203-66982-1rzdvz4.jpg?ixlib=rb-1.1.0&rect=31%2C71%2C5330%2C2665&q=45&auto=format&w=1356&h=668&fit=crop"
@@ -40,7 +40,7 @@ function CardManageEmotion({ manageEmotions }) {
         </Card.Body>
       </Card>
 
-      <Card className="mt-5 mb-5 card_main" style={{ width: "27rem" }}>
+      <Card className="card_main" style={{ width: "27rem" }}>
         <Card.Img
           variant="top"
           src="https://www.clinicaladvisor.com/wp-content/uploads/sites/11/2020/08/woman.anxiety.attack_G_1155214538-860x573.jpg"
@@ -57,7 +57,7 @@ function CardManageEmotion({ manageEmotions }) {
         </Card.Body>
       </Card>
 
-      <Card className="mt-5 mb-5 card_main" style={{ width: "27rem" }}>
+      <Card className="card_main" style={{ width: "27rem" }}>
         <Card.Img
           variant="top"
           src="https://img.freepik.com/free-photo/portrait-young-european-man-being-stupor-as-sees-his-phobia-keeps-mouth-opened-expresses-fear_273609-2967.jpg?w=2000"

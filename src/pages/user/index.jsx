@@ -15,6 +15,7 @@ import CardPomodoro from "../../components/card/card-pomo";
 import "./styles.css";
 import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
+import CardForm from "../../components/cardform";
 
 function User() {
   const [emotions, setEmotions] = useState([]);
@@ -72,9 +73,10 @@ function User() {
   return (
     <>
       {/* <div className="d-flex flex-wrap justify-content-around"> */}
-      <div className="d-flex flex-wrap justify-content-center gap-4">
+      <div className="d-flex flex-wrap justify-content-center gap-4 py-5">
         <CardManageEmotion></CardManageEmotion>
       </div>
+      <CardForm></CardForm>
 
       <CardGroup></CardGroup>
     </>

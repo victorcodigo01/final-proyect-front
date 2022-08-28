@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 
 function Register() {
   const [t, i18n] = useTranslation("global");
+  console.log("register");
 
   const { register, isLoading, isAuth } = useAuth();
   const [showEmailConfirm, updateshowEmailConfirm] = useState(false);
