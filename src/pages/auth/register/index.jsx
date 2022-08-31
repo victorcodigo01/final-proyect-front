@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 function Register() {
   const [t, i18n] = useTranslation("global");
@@ -20,7 +21,22 @@ function Register() {
       email: e.target.email.value,
       password: e.target.pass.value,
     };
-    register(user).then(() => updateshowEmailConfirm(true));
+    register(user).then(() => {
+      console.log(user);
+      let postOptions = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: { to: user.email, url: "http://localhost" },
+      };
+      console.log("en el register");
+      // fetch("http://localhost:3001/emotions")
+      fetch("http://localhost:3001/mail", postOptions)
+        // .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          updateshowEmailConfirm(true);
+        });
+    });
   };
   return (
     <>

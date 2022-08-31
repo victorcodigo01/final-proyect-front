@@ -13,6 +13,7 @@ function Login() {
   const { isAuth, isLoading, login } = useAuth();
 
   const navigate = useNavigate();
+  const [showLoginError, updateshowLoginError] = useState(false);
 
   useEffect(() => {
     if (isAuth) navigate("/"); //si entro al registro logado no me lo debe permitir
@@ -27,11 +28,20 @@ function Login() {
 
     //console.log(user.password);
 
-    login(user).then(() => navigate("/")); //despues de logarme tengo que navegar
+    login(user)
+      .then(() => navigate("/"))
+      .catch(() => {
+        updateshowLoginError(true);
+      }); //despues de logarme tengo que navegar
   };
 
   return (
     <>
+      {showLoginError ? (
+        <p className="redText">Usuario o contraseña incorrectos</p>
+      ) : (
+        ""
+      )}
       <form className="formulario flex-fill" onSubmit={handleLogin}>
         <input
           className="input"
