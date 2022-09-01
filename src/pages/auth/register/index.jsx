@@ -26,11 +26,11 @@ function Register() {
       let postOptions = {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: { to: user.email, url: "http://localhost" },
+        body: JSON.stringify({ to: user.email, url: "http://localhost" }),
       };
       console.log("en el register");
       // fetch("http://localhost:3001/emotions")
-      fetch("http://localhost:3001/mail", postOptions)
+      fetch(`${process.env.REACT_APP_API_BASE_URL}/mail`, postOptions)
         // .then((res) => res.json())
         .then((data) => {
           console.log(data);
