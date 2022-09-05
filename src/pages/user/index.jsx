@@ -16,6 +16,7 @@ import "./styles.css";
 import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 import CardForm from "../../components/cardform";
+import CardDataBase from "../../components/card/card-database";
 
 function User() {
   const [emotions, setEmotions] = useState([]);
@@ -76,6 +77,7 @@ function User() {
       <div className="d-flex flex-wrap justify-content-center gap-4 py-5">
         <CardManageEmotion></CardManageEmotion>
       </div>
+      <CardDataBase></CardDataBase>
       <CardForm></CardForm>
 
       <CardGroup></CardGroup>

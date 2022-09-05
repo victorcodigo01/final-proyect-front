@@ -1,6 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Card } from "react-bootstrap";
 import "./style.css";
+import { AiFillEdit } from "react-icons/ai";
+import { AiFillDelete } from "react-icons/ai";
+
+// import handleSubmit from "./index";
 
 function CardManageEmotion({ manageEmotions }) {
   const [t, i18n] = useTranslation("global");
@@ -21,6 +25,8 @@ function CardManageEmotion({ manageEmotions }) {
             <p>{t("sadCard.three")}</p>
             <p>{t("sadCard.four")}</p>
           </Card.Text>
+          <AiFillEdit /> &nbsp; &nbsp;
+          <AiFillDelete />
         </Card.Body>
       </Card>
 
@@ -37,6 +43,8 @@ function CardManageEmotion({ manageEmotions }) {
             <p>{t("happyCard.two")}</p>
             <p>{t("happyCard.three")}</p>
           </Card.Text>
+          <AiFillEdit /> &nbsp; &nbsp;
+          <AiFillDelete />
         </Card.Body>
       </Card>
 
@@ -54,6 +62,8 @@ function CardManageEmotion({ manageEmotions }) {
             <p>{t("anxietyCard.three")}</p>
             <p>{t("anxietyCard.four")}</p>
           </Card.Text>
+          <AiFillEdit /> &nbsp; &nbsp;
+          <AiFillDelete />
         </Card.Body>
       </Card>
 
@@ -70,6 +80,8 @@ function CardManageEmotion({ manageEmotions }) {
             <p>{t("fearCard.two")}</p>
             <p>{t("fearCard.three")}</p>
           </Card.Text>
+          <AiFillEdit /> &nbsp; &nbsp;
+          <AiFillDelete />
         </Card.Body>
       </Card>
     </>
