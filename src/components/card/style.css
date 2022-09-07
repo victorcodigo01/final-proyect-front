@@ -12,3 +12,10 @@
   object-fit: cover;
   object-position: center;
 }
+
+.disabled {
+  display: none;
+}
+.enabled {
+  display: block;
+}
