@@ -21,21 +21,8 @@ function Register() {
       email: e.target.email.value,
       password: e.target.pass.value,
     };
-    register(user).then(() => {
-      console.log(user);
-      let postOptions = {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ to: user.email, url: "http://localhost" }),
-      };
-      console.log("en el register");
-      // fetch("http://localhost:3001/emotions")
-      fetch(`${process.env.REACT_APP_API_BASE_URL}/mail`, postOptions)
-        // .then((res) => res.json())
-        .then((data) => {
-          console.log(data);
-          updateshowEmailConfirm(true);
-        });
+    register({ user, to: process.env.REACT_APP_BASE_URL }).then(() => {
+      updateshowEmailConfirm(true);
     });
   };
   return (

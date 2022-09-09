@@ -19,3 +19,10 @@
 .enabled {
   display: block;
 }
+
+.card_main {
+  transition: transform 0.2s;
+}
+.card_main:hover {
+  transform: scale(1.1);
+}

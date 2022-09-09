@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 import "./styles.css";
 
@@ -33,38 +35,43 @@ export default function CardForm() {
   }
 
   return (
-    <form className="formi" onSubmit={handleSubmit}>
+    <>
       <h1>Your Emotion card</h1>
-      <label>
-        Title:
-        <br />
-        <input
-          value={title}
-          onChange={(e) => {
-            setTitle(e.target.value);
-            setSuccessful(false);
-          }}
-        />
-      </label>
-      <label>
-        Description:
-        <br />
-        <textarea
-          value={description}
-          onChange={(e) => {
-            setDescription(e.target.value);
-            setSuccessful(false);
-          }}
-        />
-      </label>
-      <button type="submit" disabled={loading}>
-        Submit
-      </button>
-      {successful && (
-        <span style={{ fontSize: "2rem" }} aria-label="thumbs up" role="img">
-          👍🏼
-        </span>
-      )}
-    </form>
+      <Form className="formi" onSubmit={handleSubmit}>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Title</Form.Label>
+          <Form.Control
+            value={title}
+            onChange={(e) => {
+              setTitle(e.target.value);
+              setSuccessful(false);
+            }}
+            type="text"
+            placeholder="Enter text"
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Label>Description</Form.Label>
+          <Form.Control
+            as="textarea"
+            rows={7}
+            value={description}
+            onChange={(e) => {
+              setDescription(e.target.value);
+              setSuccessful(false);
+            }}
+          />
+        </Form.Group>
+
+        <Button disabled={loading} variant="primary" type="button">
+          Update
+        </Button>
+        {successful && (
+          <span style={{ fontSize: "2rem" }} aria-label="thumbs up" role="img">
+            👍🏼
+          </span>
+        )}
+      </Form>
+    </>
   );
 }
