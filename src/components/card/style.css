@@ -22,6 +22,7 @@
 
 .card_main {
   transition: transform 0.2s;
+  margin: 1.5vw;
 }
 .card_main:hover {
   transform: scale(1.1);

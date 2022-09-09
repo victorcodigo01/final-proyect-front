@@ -25,8 +25,6 @@ function CardManageEmotion({ manageEmotions }) {
             <p>{t("sadCard.three")}</p>
             <p>{t("sadCard.four")}</p>
           </Card.Text>
-          <AiFillEdit /> &nbsp; &nbsp;
-          <AiFillDelete />
         </Card.Body>
       </Card>
 
@@ -43,8 +41,6 @@ function CardManageEmotion({ manageEmotions }) {
             <p>{t("happyCard.two")}</p>
             <p>{t("happyCard.three")}</p>
           </Card.Text>
-          <AiFillEdit /> &nbsp; &nbsp;
-          <AiFillDelete />
         </Card.Body>
       </Card>
 
@@ -62,8 +58,6 @@ function CardManageEmotion({ manageEmotions }) {
             <p>{t("anxietyCard.three")}</p>
             <p>{t("anxietyCard.four")}</p>
           </Card.Text>
-          <AiFillEdit /> &nbsp; &nbsp;
-          <AiFillDelete />
         </Card.Body>
       </Card>
 
@@ -80,8 +74,6 @@ function CardManageEmotion({ manageEmotions }) {
             <p>{t("fearCard.two")}</p>
             <p>{t("fearCard.three")}</p>
           </Card.Text>
-          <AiFillEdit /> &nbsp; &nbsp;
-          <AiFillDelete />
         </Card.Body>
       </Card>
     </>

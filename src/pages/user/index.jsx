@@ -77,7 +77,10 @@ function User() {
       <div className="d-flex flex-wrap justify-content-center gap-4 py-5">
         <CardManageEmotion></CardManageEmotion>
       </div>
-      <CardDataBase></CardDataBase>
+      <div className="d-flex flex-wrap justify-content-center gap-4 py-5">
+        <CardDataBase></CardDataBase>
+      </div>
+
       <CardForm></CardForm>
 
       <CardGroup></CardGroup>

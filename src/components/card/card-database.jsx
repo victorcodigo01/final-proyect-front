@@ -41,6 +41,7 @@ function CardDataBase() {
       body: JSON.stringify({
         title: e.nuevoTitulo,
         emotionsManage: e.nuevaDescripcion.split("\n").filter(Boolean),
+        url: e.nuevaUrl,
       }),
     }).then(() => {
       window.location.reload(false);
@@ -56,6 +57,7 @@ function CardDataBase() {
     e.edicionActivada = true;
     e.nuevoTitulo = "";
     e.nuevaDescripcion = "";
+    e.nuevaUrl = "";
     console.log(e);
     document.getElementById(e._id).classList.add("enabled");
     document.getElementById(e._id).classList.remove("disabled");
@@ -65,12 +67,13 @@ function CardDataBase() {
     e.edicionActivada = false;
     e.nuevoTitulo = null;
     e.nuevaDescripcion = null;
+    e.nuevaUrl = null;
     document.getElementById(e._id).classList.add("disabled");
     document.getElementById(e._id).classList.remove("enabled");
   }
 
   return (
-    <div className="listaEmociones">
+    <div className="d-flex flex-wrap justify-content-center gap-4 py-5">
       {emociones.map((emocion) => (
         <Card
           className="card_main"
@@ -79,7 +82,11 @@ function CardDataBase() {
         >
           <Card.Img
             variant="top"
-            src="https://cdn-prod.medicalnewstoday.com/content/images/articles/320/320562/a-sad-woman-looking-out-of-the-window.jpg"
+            src={
+              emocion.url == null
+                ? "https://cdn-prod.medicalnewstoday.com/content/images/articles/320/320562/a-sad-woman-looking-out-of-the-window.jpg"
+                : emocion.url
+            }
           />
 
           <Card.Body>
@@ -94,6 +101,17 @@ function CardDataBase() {
             <AiFillEdit onClick={() => activarEdicion(emocion)} /> &nbsp; &nbsp;
             <AiFillDelete onClick={() => eliminarEmocion(emocion)} />
             <div className="disabled" id={emocion._id}>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Image url</Form.Label>
+                <Form.Control
+                  value={emocion.url}
+                  onChange={(e) => {
+                    emocion.nuevaUrl = e.target.value;
+                  }}
+                  type="url"
+                  placeholder="Enter url image"
+                />
+              </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Title</Form.Label>
                 <Form.Control
