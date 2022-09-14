@@ -1,11 +1,13 @@
 import { CardGroup, Card } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import "./styles.css";
 
 function CardGroupResults() {
   const [t, i18n] = useTranslation("global");
 
   return (
     <>
+      <h1>{t("formCards.nine")}</h1>
       <CardGroup className="rounded mb-5">
         <Card className="rounded card border-primary">
           <Card.Img

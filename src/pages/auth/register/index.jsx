@@ -31,12 +31,15 @@ function Register() {
         <h1>Loading...</h1>
       ) : (
         <>
-          {showEmailConfirm ? (
-            <p>Te hemos enviado un email, revisa tu bandeja para validarlo</p>
-          ) : (
-            ""
-          )}
           <form className="formularios flex-fill" onSubmit={handleSubmit}>
+            {showEmailConfirm ? (
+              <p className="green">
+                Te hemos enviado un email, revisa tu bandeja para validarlo
+              </p>
+            ) : (
+              ""
+            )}
+            <h4>{t("formCards.twelve")}</h4>
             <input
               className="input"
               name="email"

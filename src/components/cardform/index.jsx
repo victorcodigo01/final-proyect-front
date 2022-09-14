@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { useTranslation } from "react-i18next";
 
 import "./styles.css";
 
 export default function CardForm() {
+  const [t, i18n] = useTranslation("global");
   const [loading, setLoading] = useState(false);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -40,10 +42,9 @@ export default function CardForm() {
 
   return (
     <>
-      <h1>Your Emotion card</h1>
+      <h1>{t("formCards.one")} </h1>
       <Form className="formi" onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Image url</Form.Label>
           <Form.Control
             value={url}
             onChange={(e) => {
@@ -51,12 +52,11 @@ export default function CardForm() {
               setSuccessful(false);
             }}
             type="url"
-            placeholder="Enter url image"
+            placeholder={t("formCards.two")}
           />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Title</Form.Label>
           <Form.Control
             value={title}
             onChange={(e) => {
@@ -64,14 +64,14 @@ export default function CardForm() {
               setSuccessful(false);
             }}
             type="text"
-            placeholder="Enter text"
+            placeholder={t("formCards.three")}
           />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Description</Form.Label>
           <Form.Control
             as="textarea"
+            placeholder={t("formCards.four")}
             rows={7}
             value={description}
             onChange={(e) => {
@@ -82,7 +82,7 @@ export default function CardForm() {
         </Form.Group>
 
         <Button disabled={loading} variant="primary" type="submit">
-          Update
+          {t("formCards.five")}
         </Button>
         {successful && (
           <span style={{ fontSize: "2rem" }} aria-label="thumbs up" role="img">

@@ -127,5 +127,20 @@
     "one": "Acknowledge that emotion as a true ally. Fear informs about a situation in which there is a risk. It helps us see a point of reality important to ourselves and our safety.",
     "two": "You must evaluate if it is a feeling that is adequate to reality or if we may be feeling it excessively. If this fear is not real, we must change the perception. Find what emotion would be the right one to feel.",
     "three": "When we feel fear it makes us avoid social contact or stay without looking for new challenges. We can learn to manage it, if we take action. Success is on the other side of fear."
+  },
+
+  "formCards": {
+    "one": "Describe your emotion",
+    "two": "Image url",
+    "three": "Name",
+    "four": "Description",
+    "five": "Add",
+    "six": "Update",
+    "seven": "Cancel",
+    "eight": "Emotion Management",
+    "nine": "Take action",
+    "ten": "Your emotions",
+    "eleven": "Entry",
+    "twelve": "Registration"
   }
 }

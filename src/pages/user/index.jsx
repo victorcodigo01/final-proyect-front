@@ -19,6 +19,7 @@ import CardForm from "../../components/cardform";
 import CardDataBase from "../../components/card/card-database";
 
 function User() {
+  const [t, i18n] = useTranslation("global");
   const [emotions, setEmotions] = useState([]);
   const [emotionsFiltered, setEmotionsFiltered] = useState([]);
   // console.log(emotions);
@@ -73,13 +74,14 @@ function User() {
 
   return (
     <>
+      <h1>{t("formCards.eight")}</h1>
+
       {/* <div className="d-flex flex-wrap justify-content-around"> */}
       <div className="d-flex flex-wrap justify-content-center gap-4 py-5">
         <CardManageEmotion></CardManageEmotion>
       </div>
-      <div className="d-flex flex-wrap justify-content-center gap-4 py-5">
-        <CardDataBase></CardDataBase>
-      </div>
+      <h1>{t("formCards.ten")}</h1>
+      <CardDataBase></CardDataBase>
 
       <CardForm></CardForm>
 

@@ -4,8 +4,10 @@ import { AiFillEdit } from "react-icons/ai";
 import { AiFillDelete } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { useTranslation } from "react-i18next";
 
 function CardDataBase() {
+  const [t, i18n] = useTranslation("global");
   const [emociones, setEmociones] = useState([]);
   useEffect(() => {
     // fetch("http://localhost:3001/pomodoro-technique")
@@ -41,7 +43,9 @@ function CardDataBase() {
       body: JSON.stringify({
         title: e.nuevoTitulo,
         emotionsManage: e.nuevaDescripcion.split("\n").filter(Boolean),
-        url: e.nuevaUrl,
+        // url: e.nuevaUrl ? e.nuevaUrl : e.url,
+        url: e.nuevaUrl ?? e.url,
+        //superternario
       }),
     }).then(() => {
       window.location.reload(false);
@@ -102,33 +106,30 @@ function CardDataBase() {
             <AiFillDelete onClick={() => eliminarEmocion(emocion)} />
             <div className="disabled" id={emocion._id}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Image url</Form.Label>
                 <Form.Control
-                  value={emocion.url}
                   onChange={(e) => {
                     emocion.nuevaUrl = e.target.value;
                   }}
                   type="url"
-                  placeholder="Enter url image"
+                  placeholder={t("formCards.two")}
                 />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Title</Form.Label>
                 <Form.Control
                   onChange={(e) => {
                     emocion.nuevoTitulo = e.target.value;
                   }}
                   type="text"
-                  placeholder="Enter text"
+                  placeholder={t("formCards.three")}
                 />
               </Form.Group>
               <Form.Group
                 className="mb-3"
                 controlId="exampleForm.ControlTextarea1"
               >
-                <Form.Label>Description</Form.Label>
                 <Form.Control
                   as="textarea"
+                  placeholder={t("formCards.four")}
                   rows={7}
                   onChange={(e) => {
                     emocion.nuevaDescripcion = e.target.value;
@@ -141,14 +142,14 @@ function CardDataBase() {
                   variant="primary"
                   type="button"
                 >
-                  Update
+                  {t("formCards.six")}
                 </Button>
                 <Button
                   onClick={() => desactivarEdicion(emocion)}
                   variant="secondary"
                   type="button"
                 >
-                  Cancel
+                  {t("formCards.seven")}
                 </Button>
               </Form>
             </div>

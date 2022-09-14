@@ -50,3 +50,7 @@
   margin-bottom: 12x;
   text-decoration: none;
 }
+.green {
+  color: rgb(15, 176, 15);
+  font-weight: bold;
+}

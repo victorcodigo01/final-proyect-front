@@ -117,5 +117,20 @@
     "one": "Reconoce esa emoción como una verdadera aliada. El miedo informa sobre una situación en la que hay un riesgo. Nos ayuda a ver un punto de la realidad importante para nosotros mismos y nuestra seguridad.",
     "two": "Debes evaluar si se trata de un sentimiento adecuado a la realidad o si podemos estar sintiéndolo desmesuradamente. Si este miedo no fuera real, debemos cambiar la percepción. Buscar qué emoción sería la adecuada sentir.",
     "three": "Cuando sentimos miedo nos hace evitar el contacto social o quedarnos sin buscar nuevos retos. Podemos aprender a manejarlo, si tomamos acción. El éxito está al otro lado del miedo."
+  },
+
+  "formCards": {
+    "one": "Describe tu emoción",
+    "two": "Url de imagen",
+    "three": "Nombre",
+    "four": "Descripción",
+    "five": "Añadir",
+    "six": "Actualizar",
+    "seven": "Cancelar",
+    "eight": "Gestión de las emociones",
+    "nine": "Toma acción",
+    "ten": "Tus emociones",
+    "eleven": "Acceso",
+    "twelve": "Registrarse"
   }
 }
