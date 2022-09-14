@@ -5,13 +5,17 @@ import { AiFillDelete } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useTranslation } from "react-i18next";
+import { getAuth, wrapUsingAuth } from "../../core/auth/auth.utils";
 
 function CardDataBase() {
   const [t, i18n] = useTranslation("global");
   const [emociones, setEmociones] = useState([]);
   useEffect(() => {
     // fetch("http://localhost:3001/pomodoro-technique")
-    fetch(`${process.env.REACT_APP_API_BASE_URL}/emotions-manage`)
+    fetch(
+      `${process.env.REACT_APP_API_BASE_URL}/emotions-manage`,
+      wrapUsingAuth()
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log("Revisar Data que traigo de Mongo", data);
@@ -37,8 +41,10 @@ function CardDataBase() {
 
     fetch(`${process.env.REACT_APP_API_BASE_URL}/emotions-manage/${e._id}`, {
       method: "PUT",
+
       headers: {
         "Content-type": "application/json",
+        Authorization: getAuth(),
       },
       body: JSON.stringify({
         title: e.nuevoTitulo,
@@ -104,7 +110,7 @@ function CardDataBase() {
             })}
             <AiFillEdit onClick={() => activarEdicion(emocion)} /> &nbsp; &nbsp;
             <AiFillDelete onClick={() => eliminarEmocion(emocion)} />
-            <div className="disabled" id={emocion._id}>
+            <div className="formulario_edicion disabled" id={emocion._id}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control
                   onChange={(e) => {
@@ -156,6 +162,7 @@ function CardDataBase() {
           </Card.Body>
         </Card>
       ))}
+      <p>{emociones.length == 0 ? "No tienes nada creado" : ""}</p>
     </div>
   );
 }

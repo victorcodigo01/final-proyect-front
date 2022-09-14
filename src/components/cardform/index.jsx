@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useTranslation } from "react-i18next";
+import { getAuth } from "../../core/auth/auth.utils";
 
 import "./styles.css";
 
@@ -19,18 +20,22 @@ export default function CardForm() {
     setLoading(true);
 
     // await fetch("http://localhost:3001/emotions-manage/create", {
-    await fetch("https://pomonew.onrender.com/emotions-manage/create", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        title,
-        emotionsManage: description.split("\n").filter(Boolean),
-        url,
-      }),
-    });
+    await fetch(
+      `${process.env.REACT_APP_API_BASE_URL}/emotions-manage/create`,
+      {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+          Accept: "application/json",
+          Authorization: getAuth(),
+        },
+        body: JSON.stringify({
+          title,
+          emotionsManage: description.split("\n").filter(Boolean),
+          url,
+        }),
+      }
+    );
 
     setLoading(false);
     setSuccessful(true);

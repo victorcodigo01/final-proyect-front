@@ -3,7 +3,11 @@ export const AUTH_STORAGE_KEY = "auth_token";
 export const wrapUsingAuth = (options = {}) => {
   options.headers = {
     ...options.headers,
-    Authorization: `Bearer ${localStorage.getItem(AUTH_STORAGE_KEY)}`,
+    Authorization: `Bearer ${sessionStorage.getItem(AUTH_STORAGE_KEY)}`,
   };
   return options;
 };
+
+export function getAuth() {
+  return `Bearer ${sessionStorage.getItem(AUTH_STORAGE_KEY)}`;
+}
