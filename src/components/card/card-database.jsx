@@ -6,12 +6,14 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useTranslation } from "react-i18next";
 import { getAuth, wrapUsingAuth } from "../../core/auth/auth.utils";
+import { init } from "i18next";
 
-function CardDataBase() {
+function CardDataBase({ avisoDetectado }) {
   const [t, i18n] = useTranslation("global");
   const [emociones, setEmociones] = useState([]);
   useEffect(() => {
     // fetch("http://localhost:3001/pomodoro-technique")
+    console.log("me ejecuto antes del fetch");
     fetch(
       `${process.env.REACT_APP_API_BASE_URL}/emotions-manage`,
       wrapUsingAuth()
@@ -23,16 +25,42 @@ function CardDataBase() {
       });
   }, []);
 
-  async function eliminarEmocion(e) {
-    console.log("Eliminar");
-    console.log(e);
+  async function recuperarEmociones() {
+    // fetch("http://localhost:3001/pomodoro-technique")
+    fetch(
+      `${process.env.REACT_APP_API_BASE_URL}/emotions-manage`,
+      wrapUsingAuth()
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Revisar Data que traigo de Mongo", data);
+        setEmociones(data);
+      });
+  }
 
-    fetch(`${process.env.REACT_APP_API_BASE_URL}/emotions-manage/${e._id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-type": "application/json",
-      },
-    }).then(() => window.location.reload(false));
+  function setUpdate() {
+    console.log("me ejecuto");
+    // recuperarEmociones();
+  }
+
+  async function eliminarEmocion(emocionClickada) {
+    setEmociones([]);
+    console.log("Eliminar");
+    console.log(emocionClickada);
+
+    fetch(
+      `${process.env.REACT_APP_API_BASE_URL}/emotions-manage/${emocionClickada._id}`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-type": "application/json",
+        },
+      }
+    ).then(() => {
+      const indice = emociones.indexOf(emocionClickada);
+      emociones.splice(indice, 1);
+      setEmociones(emociones);
+    });
   }
 
   async function editarEmocion(e) {
@@ -54,12 +82,14 @@ function CardDataBase() {
         //superternario
       }),
     }).then(() => {
-      window.location.reload(false);
-      // e.title = e.nuevoTitulo;
-      // e.emotionsManage = e.nuevaDescripcion.split("\n").filter(Boolean);
-      // console.log(emociones);
-      // desactivarEdicion(e);
-      // setEmociones(emociones);
+      // window.location.reload(false);
+
+      e.title = e.nuevoTitulo;
+      e.emotionsManage = e.nuevaDescripcion.split("\n").filter(Boolean);
+      e.url = e.nuevaUrl;
+      console.log(emociones);
+      desactivarEdicion(e);
+      setEmociones([...emociones]);
     });
   }
 
@@ -93,7 +123,7 @@ function CardDataBase() {
           <Card.Img
             variant="top"
             src={
-              emocion.url == null
+              emocion.url == null || emocion.url == ""
                 ? "https://cdn-prod.medicalnewstoday.com/content/images/articles/320/320562/a-sad-woman-looking-out-of-the-window.jpg"
                 : emocion.url
             }

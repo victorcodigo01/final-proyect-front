@@ -6,7 +6,7 @@ import { getAuth } from "../../core/auth/auth.utils";
 
 import "./styles.css";
 
-export default function CardForm() {
+export default function CardForm({ setAviso }) {
   const [t, i18n] = useTranslation("global");
   const [loading, setLoading] = useState(false);
   const [title, setTitle] = useState("");
@@ -42,7 +42,8 @@ export default function CardForm() {
     setTitle("");
     setUrl("");
     setDescription("");
-    window.location.reload(false);
+    // window.location.reload(false);
+    setAviso(title);
   }
 
   return (

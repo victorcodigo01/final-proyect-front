@@ -22,6 +22,7 @@ function User() {
   const [t, i18n] = useTranslation("global");
   const [emotions, setEmotions] = useState([]);
   const [emotionsFiltered, setEmotionsFiltered] = useState([]);
+  const [avisoDetectado, setAviso] = useState("empty");
   // console.log(emotions);
 
   const [emotion, setEmotion] = useState([]);
@@ -81,9 +82,9 @@ function User() {
         <CardManageEmotion></CardManageEmotion>
       </div>
       <h1>{t("formCards.ten")}</h1>
-      <CardDataBase></CardDataBase>
+      <CardDataBase avisoDetectado={avisoDetectado}></CardDataBase>
 
-      <CardForm></CardForm>
+      <CardForm setAviso={setAviso}></CardForm>
 
       <CardGroup></CardGroup>
     </>
