@@ -22,7 +22,8 @@ function User() {
   const [t, i18n] = useTranslation("global");
   const [emotions, setEmotions] = useState([]);
   const [emotionsFiltered, setEmotionsFiltered] = useState([]);
-  const [avisoDetectado, setAviso] = useState("empty");
+  const [nuevaNotificacion, setNuevaNotificacion] = useState(0);
+
   // console.log(emotions);
 
   const [emotion, setEmotion] = useState([]);
@@ -75,16 +76,21 @@ function User() {
 
   return (
     <>
-      <h1>{t("formCards.eight")}</h1>
+      <h1 className="titleWeb">{t("formCards.eight")}</h1>
 
       {/* <div className="d-flex flex-wrap justify-content-around"> */}
       <div className="d-flex flex-wrap justify-content-center gap-4 py-5">
         <CardManageEmotion></CardManageEmotion>
       </div>
       <h1>{t("formCards.ten")}</h1>
-      <CardDataBase avisoDetectado={avisoDetectado}></CardDataBase>
+      <CardDataBase notificacion={nuevaNotificacion}></CardDataBase>
 
-      <CardForm setAviso={setAviso}></CardForm>
+      <CardForm
+        notificaPadre={(n) => {
+          setNuevaNotificacion(n);
+          console.log("He sido notificado " + n);
+        }}
+      ></CardForm>
 
       <CardGroup></CardGroup>
     </>

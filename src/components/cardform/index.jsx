@@ -6,7 +6,7 @@ import { getAuth } from "../../core/auth/auth.utils";
 
 import "./styles.css";
 
-export default function CardForm({ setAviso }) {
+export default function CardForm({ notificaPadre }) {
   const [t, i18n] = useTranslation("global");
   const [loading, setLoading] = useState(false);
   const [title, setTitle] = useState("");
@@ -43,7 +43,8 @@ export default function CardForm({ setAviso }) {
     setUrl("");
     setDescription("");
     // window.location.reload(false);
-    setAviso(title);
+    const numeroRandom = Math.floor(Math.random() * 1000);
+    notificaPadre(numeroRandom);
   }
 
   return (

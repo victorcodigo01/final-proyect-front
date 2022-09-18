@@ -11,7 +11,7 @@ function CardManageEmotion({ manageEmotions }) {
   console.log("TIPO DE DATO", manageEmotions);
   return (
     <>
-      <Card className="card_main" style={{ width: "27rem" }}>
+      <Card className="card card_main" style={{ width: "27rem" }}>
         <Card.Img
           variant="top"
           src="https://cdn-prod.medicalnewstoday.com/content/images/articles/320/320562/a-sad-woman-looking-out-of-the-window.jpg"

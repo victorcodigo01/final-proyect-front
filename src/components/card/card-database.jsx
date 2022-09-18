@@ -8,22 +8,28 @@ import { useTranslation } from "react-i18next";
 import { getAuth, wrapUsingAuth } from "../../core/auth/auth.utils";
 import { init } from "i18next";
 
-function CardDataBase({ avisoDetectado }) {
+let primeraCargaHecha = false;
+function CardDataBase({ notificacion }) {
   const [t, i18n] = useTranslation("global");
   const [emociones, setEmociones] = useState([]);
+  const [numNotificacion, setNumNotificacion] = useState(notificacion);
+
   useEffect(() => {
-    // fetch("http://localhost:3001/pomodoro-technique")
-    console.log("me ejecuto antes del fetch");
-    fetch(
-      `${process.env.REACT_APP_API_BASE_URL}/emotions-manage`,
-      wrapUsingAuth()
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("Revisar Data que traigo de Mongo", data);
-        setEmociones(data);
-      });
-  }, []);
+    console.log(notificacion);
+    setNumNotificacion(notificacion);
+    if (!primeraCargaHecha) {
+      primeraCargaHecha = true;
+      recuperarEmociones();
+    } else if (numNotificacion != 0) {
+      setNumNotificacion(0);
+      recuperarEmociones();
+    }
+  }, [notificacion, emociones]);
+  // [] los corchetes vacios en useEffect hacen que no se ejecute mas
+  // si le pasamos algun prop o state, hacemos que useEffect solo se ejecute
+  // al inicio y cuando algo de lo que le hayamos pasado se modifique.
+  // prop: info recibida desde el componente padre
+  // state: info propia y original de este componente
 
   async function recuperarEmociones() {
     // fetch("http://localhost:3001/pomodoro-technique")
