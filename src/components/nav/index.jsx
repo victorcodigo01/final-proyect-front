@@ -8,7 +8,7 @@ function Navega() {
   const [lang, setLang] = useState("es");
   const [t, i18n] = useTranslation("global");
 
-  const { theme, toggleTheme } = useContext(themeContext);
+  const { theme, toggleTheme } = useContext(themeContext); //context comunica componentes, toggleTheme es una funcion
 
   function handleToggleLang() {
     setLang((l) => {
@@ -21,6 +21,8 @@ function Navega() {
   return (
     <>
       <Navbar bg={theme} expand="lg">
+        {" "}
+        {/* theme cambia los colores */}
         <Container>
           <Navbar.Brand href="#home">Pomodoros App</Navbar.Brand>
           <Navbar.Toggle />

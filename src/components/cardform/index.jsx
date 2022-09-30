@@ -7,6 +7,7 @@ import { getAuth } from "../../core/auth/auth.utils";
 import "./styles.css";
 
 export default function CardForm({ notificaPadre }) {
+  //notificaPadre es una prop que le pasa el padre
   const [t, i18n] = useTranslation("global");
   const [loading, setLoading] = useState(false);
   const [title, setTitle] = useState("");
@@ -15,13 +16,19 @@ export default function CardForm({ notificaPadre }) {
   const [url, setUrl] = useState("");
 
   async function handleSubmit(e) {
-    e.preventDefault();
+    //es async porque dentro se va a dividir el hilo de ejecución. hadleSubmit es manejarSubmit, maneja el envio del formulario, maneja evento porq queremos escuchar el evento hacer lo que tengamos q hacer, y darle tiempo para enviar los datos
+    e.preventDefault(); // e es el evento submit, basicamente para q no se sigan enviando eventos en cascada,
 
     setLoading(true);
 
     // await fetch("http://localhost:3001/emotions-manage/create", {
+    const nuevaEmocion = {
+      title,
+      emotionsManage: description.split("\n").filter(Boolean),
+      url,
+    };
     await fetch(
-      `${process.env.REACT_APP_API_BASE_URL}/emotions-manage/create`,
+      `${process.env.REACT_APP_API_BASE_URL}/emotions-manage/create`, //ruta create , creada, luego se invoca en el backend
       {
         method: "POST",
         headers: {
@@ -29,11 +36,7 @@ export default function CardForm({ notificaPadre }) {
           Accept: "application/json",
           Authorization: getAuth(),
         },
-        body: JSON.stringify({
-          title,
-          emotionsManage: description.split("\n").filter(Boolean),
-          url,
-        }),
+        body: JSON.stringify(nuevaEmocion), //en el body tiene que ir un string pero en formato JSON
       }
     );
 
@@ -43,8 +46,8 @@ export default function CardForm({ notificaPadre }) {
     setUrl("");
     setDescription("");
     // window.location.reload(false);
-    const numeroRandom = Math.floor(Math.random() * 1000);
-    notificaPadre(numeroRandom);
+    const numeroRandom = Math.floor(Math.random() * 1000); //Math metodo nativo de Javascript , floor y random son funmciones de math
+    notificaPadre(numeroRandom); //notificaPadre, el padre le ha dado la manera de noticarle, pero el HIJO le manda info al padre, el padre le da la manera para q el HIJO pueda mandarle info (PROP, funcion, variable o lo que se)
   }
 
   return (
@@ -91,7 +94,7 @@ export default function CardForm({ notificaPadre }) {
         <Button disabled={loading} variant="primary" type="submit">
           {t("formCards.five")}
         </Button>
-        {successful && (
+        {successful && ( // muestra la mano cuando crea una card, y cuando el usuario escribe algo se quita  setSuccessful(true);  setSuccessful(false);
           <span style={{ fontSize: "2rem" }} aria-label="thumbs up" role="img">
             👍🏼
           </span>

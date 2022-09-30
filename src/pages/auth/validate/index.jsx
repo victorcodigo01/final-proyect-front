@@ -1,6 +1,7 @@
 import { useAuth } from "../../../core/auth/auth.hook";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
+import "./styles.css";
 
 function Validate() {
   const { isLoading, isAuth, validate } = useAuth();

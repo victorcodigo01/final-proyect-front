@@ -36,13 +36,13 @@ function User() {
 
   useEffect(() => {
     // fetch("http://localhost:3001/emotions-manage")
-    fetch("https://pomonew.onrender.com/emotions-manage")
-      .then((res) => res.json())
-      .then((data) => {
-        setEmotions(data);
-        setEmotionsFiltered(data);
-        console.log(data);
-      });
+    // fetch("https://pomonew.onrender.com/emotions-manage")
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setEmotions(data);
+    //     setEmotionsFiltered(data);
+    //     console.log(data);
+    //   });
   }, []);
 
   useEffect(() => {
@@ -85,7 +85,7 @@ function User() {
       <h1>{t("formCards.ten")}</h1>
       <CardDataBase notificacion={nuevaNotificacion}></CardDataBase>
 
-      <CardForm
+      <CardForm //etiqueta verde significa que es un COMPONENTE, puede ser di mi app o de bootstrap
         notificaPadre={(n) => {
           setNuevaNotificacion(n);
           console.log("He sido notificado " + n);

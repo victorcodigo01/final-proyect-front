@@ -17,9 +17,9 @@ import { AUTH_STORAGE_KEY } from "./auth.utils";
 
 export const useAuth = () => {
   const [isAuth, updateIsAuth] = useState(
-    sessionStorage.getItem(AUTH_STORAGE_KEY) !== null
-  );
-  const [isLoading, updateIsLoading] = useState(false);
+    sessionStorage.getItem(AUTH_STORAGE_KEY) !== null // mientras q al final de la funcion useState, devuelva una variable, puedes pasarle lo que quieras
+  ); // en el codigo puedes hacer siempre lo que tu quieras, si al final se da un valor, eso le vale, las condiciones siempre devuelve un boolean
+  const [isLoading, updateIsLoading] = useState(false); //va desgranando el tipo de datos, que te devuelve, busca en los docs
 
   const register = async (user) => {
     updateIsLoading(true); //me pongo en modo carga
@@ -31,7 +31,7 @@ export const useAuth = () => {
     updateIsLoading(true); //me pongo en modo carga
     const token = await loginAPI(user);
     updateIsAuth(true);
-    sessionStorage.setItem(AUTH_STORAGE_KEY, token.access_token);
+    sessionStorage.setItem(AUTH_STORAGE_KEY, token.access_token); // si tiene un punto token es un objeto
     updateIsLoading(false); //cuando termino de llamar a la API dejo de cargar
   };
 
@@ -41,18 +41,11 @@ export const useAuth = () => {
     updateIsLoading(false); //cuando termino de llamar a la API dejo de cargar
   };
 
-  // const deleting = async (user) => {
-  //     updateIsDelete(true); //me pongo en modo carga
-  //     await deleteAPI(user);
-  //     updateIsDeleting(false); //cuando termino de llamar a la API dejo de cargar
-  // }
-
   return {
     isAuth,
     isLoading,
     register,
     login,
     validate,
-    // deleting,
   };
 };
