@@ -49,7 +49,7 @@ function CardDataBase({ notificacion }) {
         // las then sabe que va a recibir un valor pero le pones el nombre que quieras, como declarar una variable pero que contiene ya informacion
         //segundo .then es una concatenacion en tuberia, el segundo .then recibe el objeto final, los 2 then juntos conformarn la concatenacion en tuberia y el ultimo lo recibe, asi tienes acceso a la info
         console.log("Revisar Data que traigo de Mongo", data);
-        setEmociones(data);
+        setEmociones([...data]);
       });
   }
 
@@ -76,7 +76,8 @@ function CardDataBase({ notificacion }) {
       // parametro vacio porque no nos interesa lo que nos devuelva, cuando termine el fetch ejecuto
       const indice = emociones.indexOf(emocionClickada); //busca el indice (posicion numerica) de la card que clicko para borrar (puede ser la card 4 de 7)
       emociones.splice(indice, 1); // splice borra parametros de un array , el primer parametro es la posicion por la que tiene que empezar a borrar,y el segundo parametro es cuantos elementos debe borrar
-      setEmociones(emociones);
+      console.log(emociones);
+      setEmociones([...emociones]);
     });
   }
 
