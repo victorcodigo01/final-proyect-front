@@ -16,14 +16,28 @@ function CardDataBase({ notificacion }) {
 
   useEffect(() => {
     //
+    const recuperacion = async () => {
+      fetch(
+        `${process.env.REACT_APP_API_BASE_URL}/emotions-manage`, //una API es una URL que hace una escucha desde el backend esta pendiente para recibir y dar informacion
+        wrapUsingAuth()
+      )
+        .then((res) => res.json()) // entonces cuando me llegue le pasa a json (res, nombre q quieras)
+        .then((data) => {
+          // la recibe y puedes poner el nombre que quieras (data)
+          // las then sabe que va a recibir un valor pero le pones el nombre que quieras, como declarar una variable pero que contiene ya informacion
+          //segundo .then es una concatenacion en tuberia, el segundo .then recibe el objeto final, los 2 then juntos conformarn la concatenacion en tuberia y el ultimo lo recibe, asi tienes acceso a la info
+          console.log("Revisar Data que traigo de Mongo", data);
+          setEmociones([...data]);
+        });
+    };
     console.log(notificacion);
     setNumNotificacion(notificacion);
     if (!primeraCargaHecha) {
       primeraCargaHecha = true;
-      recuperarEmociones();
+      recuperacion().catch(console.error);
     } else if (numNotificacion != 0) {
       setNumNotificacion(0); //mandando info cuando esta entre parentesis, la funcion puede usar lo que le has mandado o no e incluso puede mandar otra cosa de vuelta
-      recuperarEmociones();
+      recuperacion().catch(console.error);
     }
   }, [notificacion, emociones]);
   // las funciones no siguen un orden lineal, solo se ejecutan cuando se las llama
