@@ -28,6 +28,7 @@ export default function CardForm({ notificaPadre }) {
       url,
     };
     await fetch(
+      //await es para no tener que hacer el then, te da igual un poco cuando se reciba, simplemente quieres que se ejecute
       `${process.env.REACT_APP_API_BASE_URL}/emotions-manage/create`, //ruta create , creada, luego se invoca en el backend
       {
         method: "POST",
@@ -38,16 +39,18 @@ export default function CardForm({ notificaPadre }) {
         },
         body: JSON.stringify(nuevaEmocion), //en el body tiene que ir un string pero en formato JSON
       }
-    );
-
-    setLoading(false);
-    setSuccessful(true);
-    setTitle("");
-    setUrl("");
-    setDescription("");
-    // window.location.reload(false);
-    const numeroRandom = Math.floor(Math.random() * 1000); //Math metodo nativo de Javascript , floor y random son funmciones de math
-    notificaPadre(numeroRandom); //notificaPadre, el padre le ha dado la manera de noticarle, pero el HIJO le manda info al padre, el padre le da la manera para q el HIJO pueda mandarle info (PROP, funcion, variable o lo que se)
+    )
+      .then((res) => res.json()) // entonces cuando me llegue le pasa a json (res, nombre q quieras)
+      .then((data) => {
+        console.log(data);
+        setLoading(false);
+        setSuccessful(true);
+        setTitle("");
+        setUrl("");
+        setDescription("");
+        // window.location.reload(false);
+        notificaPadre(data); //notificaPadre, el padre le ha dado la manera de noticarle, pero el HIJO le manda info al padre, el padre le da la manera para q el HIJO pueda mandarle info (PROP, funcion, variable o lo que se)
+      });
   }
 
   return (

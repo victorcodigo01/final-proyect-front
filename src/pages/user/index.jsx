@@ -22,7 +22,7 @@ function User() {
   const [t, i18n] = useTranslation("global");
   const [emotions, setEmotions] = useState([]);
   const [emotionsFiltered, setEmotionsFiltered] = useState([]);
-  const [nuevaNotificacion, setNuevaNotificacion] = useState(0);
+  const [nuevaNotificacion, setNuevaNotificacion] = useState(null); //un null puede ser un objeto, cualquier cosa
 
   // console.log(emotions);
 
