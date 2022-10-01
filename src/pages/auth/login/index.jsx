@@ -59,7 +59,7 @@ function Login() {
         <button className="boton" type="submit">
           {t("buttons.one")}
         </button>
-        <button className="register">
+        <button type="button" className="register">
           <Link to="/auth/register">{t("buttons.two")}</Link>
         </button>
       </form>

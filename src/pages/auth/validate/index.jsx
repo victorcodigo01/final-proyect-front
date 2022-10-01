@@ -15,10 +15,12 @@ function Validate() {
   return isLoading ? (
     <h1>Validando su email...</h1>
   ) : (
-    <>
+    <div className="formulario flex-fill">
       <h1>Su email se ha validado con éxito. Ya puedes hacer login.</h1>
-      <Link to={"/auth/login"}>Ir a login</Link>
-    </>
+      <Link className="enlaceLogin" to={"/auth/login"}>
+        Ir a login
+      </Link>
+    </div>
   );
 }
 

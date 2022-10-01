@@ -55,7 +55,7 @@ function Register() {
             <button className="boton" type="submit">
               {t("buttons.two")}
             </button>
-            <button className="login">
+            <button type="button" className="login">
               <Link to="/auth/login">{t("buttons.one")}</Link>
             </button>
           </form>

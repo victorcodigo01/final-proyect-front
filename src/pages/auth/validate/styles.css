@@ -1,5 +1,11 @@
-link {
+.enlaceLogin {
   font-size: 2rem;
-  text-decoration: none;
+  text-decoration: none !important;
   text-align: center;
+  font-weight: 500;
+  color: rgb(90, 246, 90);
+}
+
+.formulario h1 {
+  color: #f8f9fa;
 }
