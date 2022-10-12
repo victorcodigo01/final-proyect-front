@@ -16,7 +16,7 @@
 
 <div align="center"><a name="menu"></a>
 
-![ScreenShot](/public/capturas-readme-pomodoros/1.png)
+![ScreenShot](/public/capturas-readme-pomodoros/1 Landing page.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/4.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/9.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/10.png)
