@@ -19,7 +19,7 @@
 ![ScreenShot](/public/capturas-readme-pomodoros/9-Registro-con-email-y-password.png)
 
 ![ScreenShot](/public/capturas-readme-pomodoros/10-Te-hemos-enviado-un-email.png)
-![ScreenShot](/public/capturas-readme-pomodoros/11-email-para-validar.png)
+![ScreenShot](/public/capturas-readme-pomodoros/11-valida-tu-email-.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/13-email-validado.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/33-entry.png)
 
