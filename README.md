@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+<h1 align="center">
+  Pomodoros app. Gestión de emociones en el trabajo.
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tabla de contenidos
 
-## Available Scripts
+- [Recorrido del proyecto](#Recorrido-del-proyecto)
+  - [Página de inicio](#Página-de-inicio)
+  - [Página de usuario ](#Página-de-usuario)
+- [Demo en vivo](#Demo-en-vivo)
+- [Tecnologías utilizadas](#Tecnologías-utilizadas)
 
-In the project directory, you can run:
+# Recorrido del proyecto
 
-### `npm start`
+# Página de inicio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div align="center"><a name="menu"></a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![ScreenShot](/public/capturas-readme-pomodoros/1.png)
+![ScreenShot](/public/capturas-readme-pomodoros/4.png)
+![ScreenShot](/public/capturas-readme-pomodoros/9.png)
+![ScreenShot](/public/capturas-readme-pomodoros/10.png)
+![ScreenShot](/public/capturas-readme-pomodoros/11.png)
+![ScreenShot](/public/capturas-readme-pomodoros/12.png)
+![ScreenShot](/public/capturas-readme-pomodoros/13.png)
+![ScreenShot](/public/capturas-readme-pomodoros/14.png)
 
-### `npm test`
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La página de inicio consta de las siguentes funciones principales:
 
-### `npm run build`
+**_1) Header, que incluye:_**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Botón Switch para cambiar a un tema oscuro.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Botón ES / EN para cambiar de español a inglés
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**_2) Formulario de Registro:_**
+Para utilizar Pomodoros App registrate y valida tu usuario desde el email que indicaste.
 
-### `npm run eject`
+**_3) Formulario de Log in:_**
+Entra en la aplicación con tu email y contraseña.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**_4) Footer:_**
+Contiene la Política de privacidad del sitio web.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**_### La página responde completamente a todos los dispositivos móviles, incluso a los más pequeños.. ###_**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Página de usuario
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<div align="center"><a name="menu"></a>
 
-## Learn More
+![ScreenShot](/public/capturas-readme-pomodoros/15.png)
+![ScreenShot](/public/capturas-readme-pomodoros/16.png)
+![ScreenShot](/public/capturas-readme-pomodoros/17.png)
+![ScreenShot](/public/capturas-readme-pomodoros/18.png)
+![ScreenShot](/public/capturas-readme-pomodoros/19.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![ScreenShot](/public/capturas-readme-pomodoros/28.png)
+![ScreenShot](/public/capturas-readme-pomodoros/30.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![ScreenShot](/public/capturas-readme-pomodoros/21.png)
+![ScreenShot](/public/capturas-readme-pomodoros/22.png)
+![ScreenShot](/public/capturas-readme-pomodoros/23.png)
+![ScreenShot](/public/capturas-readme-pomodoros/24.png)
+![ScreenShot](/public/capturas-readme-pomodoros/25.png)
+![ScreenShot](/public/capturas-readme-pomodoros/26.png)
+![ScreenShot](/public/capturas-readme-pomodoros/27.png)
 
-### Code Splitting
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+La página de usuario consta de las siguientes secciones:
 
-### Analyzing the Bundle Size
+**_1) Header, que incluye:_**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Botón Switch para cambiar a un tema oscuro.
 
-### Making a Progressive Web App
+- Botón ES / EN para cambiar de español a inglés.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**_2) Cards con la gestión de emociones básicas :_**
+Contiene una guía con la gestión de las emociones comunes a todas las personas, para ayudarte a gestionarlas en entornos laborales.
 
-### Advanced Configuration
+**_3) Formulario de creación fichas con tus emociones:_**
+Crea cards con tus propias emociones. Al escribirlas y dejarlas visibles, junto con la adecuada gestión de las mismas, es posible completar tus tareas de manera eficiente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**_4) Fichas con instrucciones para tomar acción con tus tareas en base a las emociones que sientes:_**
+En base a las emociones que sientes, y además a la guía de gestión de emociones básicas. Esta sección te insta a tomar acción para resolver las tareas pendientes a pesar de sentir emociones intensas que normalmente harían que no completaras esas tareas.
 
-### Deployment
+<div align="center"><a name="menu"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![ScreenShot](/public/images/readme/14.jpg)
 
-### `npm run build` fails to minify
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**_6) Footer:_**
+Contiene la Política de privacidad del sitio web.
+
+**_### La página responde completamente a todos los dispositivos móviles, incluso a los más pequeños. ###_**
+
+# Demo en vivo
+
+**_Echa un vistazo a la versión en vivo aquí:_** https://pomostate.netlify.app/ :octocat: :heart_eyes:
+
+# Tecnologías utilizadas
+
+He construido este proyecto utilizando las siguientes tecnologías y herramientas:
+
+- React.JS
+- Node JS.
+- Express JS.
+- Mongo DB.
+- React Hooks.
+- Javascript.
+- CSS.
