@@ -50,20 +50,13 @@ Contiene la Política de privacidad del sitio web.
 
 <div align="center"><a name="menu"></a>
 
-![ScreenShot](/public/capturas-readme-pomodoros/15-gestion-emociones.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/16-tristeza.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/17-alegria.png)
-![ScreenShot](/public/capturas-readme-pomodoros/18-ansiedad.png)
-![ScreenShot](/public/capturas-readme-pomodoros/19-miedo.png)
-
 ![ScreenShot](/public/capturas-readme-pomodoros/28-emotions-english.png)
-![ScreenShot](/public/capturas-readme-pomodoros/29-emotions-others.png)
-![ScreenShot](/public/capturas-readme-pomodoros/30-formulario-cards.png)
 
+![ScreenShot](/public/capturas-readme-pomodoros/30-formulario-cards.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/21-describe-emocion.png)
-![ScreenShot](/public/capturas-readme-pomodoros/22-emocion-descrita.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/23-emociones-descritas.png)
-![ScreenShot](/public/capturas-readme-pomodoros/24-editar-emocion.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/25-editar-emocion-ejem.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/26-emocion-editada.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/27-toma-accion.png)
