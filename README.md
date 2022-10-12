@@ -21,9 +21,9 @@
 ![ScreenShot](/public/capturas-readme-pomodoros/9-Registro-con-email-y-password.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/10-Te-hemos-enviado-un-email.png)
 ![Valida-tu-email](/public/capturas-readme-pomodoros/11-valida-tu-email-.png)
-![ScreenShot](/public/capturas-readme-pomodoros/12.png)
-![ScreenShot](/public/capturas-readme-pomodoros/13.png)
-![ScreenShot](/public/capturas-readme-pomodoros/14.png)
+![ScreenShot](/public/capturas-readme-pomodoros/12-email-para-validar.png)
+![ScreenShot](/public/capturas-readme-pomodoros/13-email-validado.png)
+![ScreenShot](/public/capturas-readme-pomodoros/14-usuario-incorrecto.png)
 
 </div>
 
@@ -44,28 +44,29 @@ Entra en la aplicación con tu email y contraseña.
 **_4) Footer:_**
 Contiene la Política de privacidad del sitio web.
 
-**_### La página responde completamente a todos los dispositivos móviles, incluso a los más pequeños.. ###_**
+**_ \* La página responde completamente a todos los dispositivos móviles, incluso a los más pequeños._**
 
 # Página de usuario
 
 <div align="center"><a name="menu"></a>
 
-![ScreenShot](/public/capturas-readme-pomodoros/15.png)
-![ScreenShot](/public/capturas-readme-pomodoros/16.png)
-![ScreenShot](/public/capturas-readme-pomodoros/17.png)
-![ScreenShot](/public/capturas-readme-pomodoros/18.png)
-![ScreenShot](/public/capturas-readme-pomodoros/19.png)
+![ScreenShot](/public/capturas-readme-pomodoros/15-gestion-emociones.png)
+![ScreenShot](/public/capturas-readme-pomodoros/16-tristeza.png)
+![ScreenShot](/public/capturas-readme-pomodoros/17-alegria.png)
+![ScreenShot](/public/capturas-readme-pomodoros/18-ansiedad.png)
+![ScreenShot](/public/capturas-readme-pomodoros/19-miedo.png)
 
-![ScreenShot](/public/capturas-readme-pomodoros/28.png)
-![ScreenShot](/public/capturas-readme-pomodoros/30.png)
+![ScreenShot](/public/capturas-readme-pomodoros/28-emotions-english.png)
+![ScreenShot](/public/capturas-readme-pomodoros/29-emotions-others.png)
+![ScreenShot](/public/capturas-readme-pomodoros/30-formulario-cards.png)
 
-![ScreenShot](/public/capturas-readme-pomodoros/21.png)
-![ScreenShot](/public/capturas-readme-pomodoros/22.png)
-![ScreenShot](/public/capturas-readme-pomodoros/23.png)
-![ScreenShot](/public/capturas-readme-pomodoros/24.png)
-![ScreenShot](/public/capturas-readme-pomodoros/25.png)
-![ScreenShot](/public/capturas-readme-pomodoros/26.png)
-![ScreenShot](/public/capturas-readme-pomodoros/27.png)
+![ScreenShot](/public/capturas-readme-pomodoros/21-describe-emocion.png)
+![ScreenShot](/public/capturas-readme-pomodoros/22-emocion-descrita.png)
+![ScreenShot](/public/capturas-readme-pomodoros/23-emociones-descritas.png)
+![ScreenShot](/public/capturas-readme-pomodoros/24-editar-emocion.png)
+![ScreenShot](/public/capturas-readme-pomodoros/25-editar-emocion-ejem.png)
+![ScreenShot](/public/capturas-readme-pomodoros/26-emocion-editada.png)
+![ScreenShot](/public/capturas-readme-pomodoros/27-toma-accion.png)
 
 </div>
 
