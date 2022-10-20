@@ -52,31 +52,32 @@ Contiene la Política de privacidad del sitio web.
 ![ScreenShot](/public/capturas-readme-pomodoros/17-alegria.png)
 
 Gestión de las emociones primarias de tristeza y felicidad.
-
+<br></br>
 
 ![ScreenShot](/public/capturas-readme-pomodoros/28-emotions-english.png)
 
 Gestión de las emociones de tristeza y felicidad en inglés.
-
+<br></br>
 
 ![ScreenShot](/public/capturas-readme-pomodoros/30-formulario-cards.png)
 
 Comienza a definir tus emociones para poder gestionarlas mejor.
-
+<br></br>
 
 ![ScreenShot](/public/capturas-readme-pomodoros/21-describe-emocion.png)
 
 Rellena el formulario, siendo descriptivo para llegar al fondo de la cuestión.
-
+<br></br>
 
 ![ScreenShot](/public/capturas-readme-pomodoros/23-emociones-descritas.png)
 Ejemplo de emociones publicadas en tu cuenta de usuario.
-
+<br></br>
 
 
 
 ![ScreenShot](/public/capturas-readme-pomodoros/26-emocion-editada.png)
 Puedes editar tu emoción, para ver tu evolución.
+<br></br>
 
 ![ScreenShot](/public/capturas-readme-pomodoros/27-toma-accion.png)
 Toma acción.
@@ -91,12 +92,15 @@ La página de usuario consta de las siguientes secciones:
 
 - Botón ES / EN para cambiar de español a inglés.
 <br></br>
+
 **_2) Cards con la gestión de emociones básicas :_**
 Contiene una guía con la gestión de las emociones comunes a todas las personas, para ayudarte a gestionarlas en entornos laborales.
 <br></br>
+
 **_3) Formulario de creación fichas con tus emociones:_**
 Crea cards con tus propias emociones. Al escribirlas y dejarlas visibles, junto con la adecuada gestión de las mismas, es posible completar tus tareas de manera eficiente.
 <br></br>
+
 **_4) Fichas con instrucciones para tomar acción con tus tareas en base a las emociones que sientes:_**
 En base a las emociones que sientes, y además a la guía de gestión de emociones básicas. Esta sección te insta a tomar acción para resolver las tareas pendientes a pesar de sentir emociones intensas que normalmente harían que no completaras esas tareas.
 <br></br>
