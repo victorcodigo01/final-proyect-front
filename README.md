@@ -60,7 +60,7 @@ Comienza a definir tus emociones para poder gestionarlas mejor.
 Rellena el formulario , siendo descriptivo para llegar al fondo de la cuestión.
 ![ScreenShot](/public/capturas-readme-pomodoros/23-emociones-descritas.png)
 Ejemplo de emociones publicadas en tu cuenta de usuario.
-![ScreenShot](/public/capturas-readme-pomodoros/25-editar-emocion-ejem.png)
+<br></br>
 Puedes editar tu emoción, para ver tu evolución.
 ![ScreenShot](/public/capturas-readme-pomodoros/26-emocion-editada.png)
 Emoción editada.
@@ -71,7 +71,7 @@ Toma acción.
 
 
 
-
+<br></br>
 La página de usuario consta de las siguientes secciones:
 
 **_1) Header, que incluye:_**
@@ -99,7 +99,7 @@ En base a las emociones que sientes, y además a la guía de gestión de emocion
 Contiene la Política de privacidad del sitio web.
 
 
-**_ La página responde completamente a todos los dispositivos móviles, incluso a los más pequeños. _**
+**_La página responde completamente a todos los dispositivos móviles, incluso a los más pequeños._**
 
 # Demo en vivo
 
