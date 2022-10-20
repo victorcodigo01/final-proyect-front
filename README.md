@@ -50,25 +50,33 @@ Contiene la Política de privacidad del sitio web.
 
 ![ScreenShot](/public/capturas-readme-pomodoros/16-tristeza.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/17-alegria.png)
+
 Gestión de las emociones primarias de tristeza y felicidad.
+
 ![ScreenShot](/public/capturas-readme-pomodoros/28-emotions-english.png)
+
 Gestión de las emociones de tristeza y felicidad en inglés.
 
 ![ScreenShot](/public/capturas-readme-pomodoros/30-formulario-cards.png)
+
 Comienza a definir tus emociones para poder gestionarlas mejor.
+
 ![ScreenShot](/public/capturas-readme-pomodoros/21-describe-emocion.png)
-Rellena el formulario , siendo descriptivo para llegar al fondo de la cuestión.
+
+Rellena el formulario, siendo descriptivo para llegar al fondo de la cuestión.
+
 ![ScreenShot](/public/capturas-readme-pomodoros/23-emociones-descritas.png)
 Ejemplo de emociones publicadas en tu cuenta de usuario.
+
 <br></br>
 Puedes editar tu emoción, para ver tu evolución.
+
 ![ScreenShot](/public/capturas-readme-pomodoros/26-emocion-editada.png)
 Emoción editada.
 ![ScreenShot](/public/capturas-readme-pomodoros/27-toma-accion.png)
 Toma acción.
 
 </div>
-
 
 
 <br></br>
@@ -97,6 +105,7 @@ En base a las emociones que sientes, y además a la guía de gestión de emocion
 
 **_6) Footer:_**
 Contiene la Política de privacidad del sitio web.
+<br></br>
 
 
 **_La página responde completamente a todos los dispositivos móviles, incluso a los más pequeños._**
