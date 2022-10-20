@@ -1,74 +1,146 @@
- {
-    "header":{
-        "hello-world":"Hello World",
-        "home": "Home"
-    },
+{
+  "header": {
+    "hello-world": "Hello World",
+    "home": "Home"
+  },
 
-    "cards":{
-        "joy": "Feeling that manifests itself from a good state of mind, involves satisfaction and is accompanied by a smile or laugh",
-        "sorrow": "Sensation of emotional pain, caused by a triggering factor and leading to thoughts with a pessimistic tone.",
-        "anger": "Primary emotion that indicates a very great anger against a person or situation.",
-        "surprise": "Emotional disturbance caused by something unforeseen or unexpected.",
-        "exposed": "Put something or someone so that it can be seen by others",
-        "blurred": "The person is not distinguished clearly in the picture.",
-        "headwear": "The person in the photo has his head covered and his features cannot be recognized."
+  "cards": {
+    "joy": "Feeling that manifests itself from a good state of mind, involves satisfaction and is accompanied by a smile or laugh",
+    "sorrow": "Sensation of emotional pain, caused by a triggering factor and leading to thoughts with a pessimistic tone.",
+    "anger": "Primary emotion that indicates a very great anger against a person or situation.",
+    "surprise": "Emotional disturbance caused by something unforeseen or unexpected.",
+    "exposed": "Put something or someone so that it can be seen by others",
+    "blurred": "The person is not distinguished clearly in the picture.",
+    "headwear": "The person in the photo has his head covered and his features cannot be recognized."
+  },
 
-    },
+  "pomodoro": {
+    "step-one": "Divide the activity into tasks.",
+    "step-two": "Once divided, you must rank them. That is, prioritize them and order them accordingly with their execution.",
+    "step-three": "Set the timer to 25 minutes and run the method until the alarm goes off. The idea is to stay focused and work intensively during this period of time, avoiding any distractions.",
+    "step-four": "When the alarm sounds, you must write down or mark the task done and rest for 5 minutes, you can also set the timer with the countdown.",
+    "step-five": "During the short break you can do whatever you want, except work on the next task.",
+    "step-six": "Once the break time is over, you must reset the counter to 0 and schedule your next 25 minutes of work, where you must tackle the next task.",
+    "step-seven": "When you have completed four tasks or pomodoros, you can take a longer break, of about 15 minutes. Next, you'll need to start a new block of four tasks."
+  },
 
-    "pomodoro":{
-        "step-one": "Divide the activity into tasks.",
-        "step-two": "Once divided, you must rank them. That is, prioritize them and order them accordingly with their execution.",
-        "step-three": "Set the timer to 25 minutes and run the method until the alarm goes off. The idea is to stay focused and work intensively during this period of time, avoiding any distractions.",
-        "step-four": "When the alarm sounds, you must write down or mark the task done and rest for 5 minutes, you can also set the timer with the countdown.",
-        "step-five": "During the short break you can do whatever you want, except work on the next task.",
-        "step-six": "Once the break time is over, you must reset the counter to 0 and schedule your next 25 minutes of work, where you must tackle the next task.",
-        "step-seven": "When you have completed four tasks or pomodoros, you can take a longer break, of about 15 minutes. Next, you'll need to start a new block of four tasks."
-    },
+  "title": {
+    "manageEmo": "MANAGEMENT OF EMOTIONS",
+    "pomod": "POMODORO TECHNIQUE",
+    "taskTime": "TASK TIME"
+  },
 
+  "titleCards": {
+    "one": "Sad",
+    "two": "Happy",
+    "three": "Anxiety",
+    "four": "Fear"
+  },
 
-    "title": {
-        "manageEmo": "MANAGEMENT OF EMOTIONS",
-        "pomod": "POMODORO TECHNIQUE",
-        "taskTime": "TASK TIME"
-    },
+  "theme": {
+    "one": "Theme"
+  },
 
-    "gestionEmociones": {
-        "one": "6 techniques to develop emotional management.",
-        "two": "1. Differentiate what you can avoid from what you can manage.",
-        "three": "2. Learn to focus on yourself and the present moment.",
-        "four": "3. Plan only the immediate future.",
-        "five": "4. Manage worries once a day.",
-        "six": "5. Proposes solutions to worst case scenarios.",
-        "seven": "6. Find ways to escape and drain."
-    },
+  "PolitcsPrivacy": {
+    "one": "Privacy Policy"
+  },
 
-    "pomodoroList": {
-        "one": "1. Divide the activity into tasks.",
-        "two": "2. Once divided, you must rank them. That is, prioritize them and order them accordingly with their execution.",
-        "three": "3. Set the timer to 25 minutes and run the method until the alarm goes off. The idea is to keep you focused by avoiding any distractions.",
-        "four": "4. 5 minutes of short break in which you can do anything.",
-        "five": "5. You must put the counter back to 0 and schedule your next 25 minutes of work, where you will tackle the next task.",
-        "six": "6. When you have completed four tasks or pomodoros, you can take a longer break, of about 15 minutes. Next, you'll need to start a new block of four tasks."
-        
-    },
+  "PrivacyText": {
+    "one": "Privacy Policy",
+    "two": "Victor Martin informs you about its Privacy Policy regarding the treatment and protection of personal data of users and customers that may be collected by browsing or contracting services through the Pomodoros App.",
+    "three": "In this sense, the Owner guarantees compliance with current regulations on the protection of personal data, reflected in Organic Law 3/2018, of December 5, on the Protection of Personal Data and the Guarantee of Digital Rights (LOPD GDD) . It also complies with Regulation (EU) 2016/679 of the European Parliament and of the Council of April 27, 2016 regarding the protection of natural persons (RGPD).",
+    "four": "The use of the website implies acceptance of this Privacy Policy as well as the conditions included in the Legal Notice.",
+    "five": "Principles applied in data processing",
+    "six": "In the processing of your personal data, the Owner will apply the following principles that comply with the requirements of the new European data protection regulation:",
+    "seven": "Principle of legality, loyalty and transparency: The Holder will always require consent for the processing of your personal data, which may be for one or more specific purposes about which you will be previously informed with absolute transparency.",
+    "eight": "Principle of data minimization: The Holder will always treat personal data in a lawful, transparent and correct manner, with the aim of guaranteeing maximum security and confidentiality.",
+    "nine": "Principle of limitation of responsibility: The Owner undertakes not to process your personal data for purposes other than those provided for in this Privacy Policy.",
+    "ten": "Principle of limitation of the term of conservation: The data will be kept for the time strictly necessary for the purpose or purposes of the treatment.",
+    "eleven": "The Holder will inform you of the corresponding conservation period according to the purpose. In the case of subscriptions, the Holder will periodically review the lists and will eliminate those records that are inactive for a considerable time.",
+    "twelve": "Principle of integrity and confidentiality: Your data will be treated in such a way that its security, confidentiality and integrity is guaranteed. You should know that the Holder takes the necessary precautions to prevent unauthorized access or improper use of the data of its users by third parties.",
+    "thirteen": "Security of personal data",
+    "fourteen": "To protect your personal data, the Holder takes all reasonable precautions and follows the best industry practices to prevent their loss, misuse, improper access, disclosure, alteration or destruction of the same.",
+    "fifteen": "The website is hosted on Netlify and Render. The security of your data is guaranteed, since they take all the necessary security measures for it. You can consult their privacy policy for more information.",
+    "sixteen": "Changes in the Privacy Policy",
+    "seventeen": "The Owner reserves the right to modify this Privacy Policy to adapt it to new legislation or jurisprudence, as well as industry practices.",
+    "eighteen": "These policies will be in force until they are modified by others duly published."
+  },
 
-    "tasking": {
-        "one": "Fraction of time to choose for the management of tasks and emotions.",
-        "two": "1 hour",
-        "three": "2 hours",
-        "four": "3 hours",
-        "five": "4 hours"
-    },
+  "gestionEmociones": {
+    "one": "6 techniques to develop emotional management.",
+    "two": "1. Differentiate what you can avoid from what you can manage.",
+    "three": "2. Learn to focus on yourself and the present moment.",
+    "four": "3. Plan only the immediate future.",
+    "five": "4. Manage worries once a day.",
+    "six": "5. Proposes solutions to worst case scenarios.",
+    "seven": "6. Find ways to escape and drain."
+  },
 
-    "buttons": {
-        "one": "Log in",
-        "two": "Register"
-    },
+  "pomodoroList": {
+    "one": "1. Divide the activity into tasks.",
+    "two": "2. Once divided, you must rank them. That is, prioritize them and order them accordingly with their execution.",
+    "three": "3. Set the timer to 25 minutes and run the method until the alarm goes off. The idea is to keep you focused by avoiding any distractions.",
+    "four": "4. 5 minutes of short break in which you can do anything.",
+    "five": "5. You must put the counter back to 0 and schedule your next 25 minutes of work, where you will tackle the next task.",
+    "six": "6. When you have completed four tasks or pomodoros, you can take a longer break, of about 15 minutes. Next, you'll need to start a new block of four tasks."
+  },
 
-    "placeholders": {
-        "one": "Email",
-        "two": "Password"
-    }
-   
+  "tasking": {
+    "one": "Fraction of time to choose for the management of tasks and emotions.",
+    "two": "1 hour",
+    "three": "2 hours",
+    "four": "3 hours",
+    "five": "4 hours"
+  },
 
+  "buttons": {
+    "one": "Log in",
+    "two": "Register"
+  },
+
+  "placeholders": {
+    "one": "Email",
+    "two": "Password"
+  },
+
+  "sadCard": {
+    "one": "Don't deny it, deal with it. Let your body express what it feels with total freedom, bring out what it has inside.",
+    "two": "You must understand what is happening to you and accept it. You need to find solutions to get ahead. Don't victimize yourself or blame yourself.",
+    "three": "Find your purpose. It is necessary to work on self-knowledge to identify what motivates us and what we want to achieve.",
+    "four": "Give yourself time. Overcoming sadness is not easy, so be patient with yourself. Every little achievement you have to celebrate. Be constant."
+  },
+
+  "happyCard": {
+    "one": "It is important to value all the positive aspects of work: autonomy, flexibility, conciliation, teamwork.",
+    "two": "When in doubt, ask. Chat, share experiences. Teamwork is proven to increase productivity.",
+    "three": "Working does not imply being bored in an office. You have to have fun working, learn from other colleagues, a good working environment is key to feel fulfilled."
+  },
+
+  "anxietyCard": {
+    "one": "Meditate 10 minutes. It doesn't matter where you are. Close your eyes and focus on your breath. Try to make your mind blank.",
+    "two": "Move on. A few minutes of physical activity can make a difference. Dance, jump, seek to disconnect from the situation for a moment.",
+    "three": "Remind yourself of something funny or just make a laughing gesture. Your body will begin to release endorphins and relax muscles.",
+    "four": "Share what you feel. It gives the impression that it is frowned upon to express a certain weakness. Did you know that hiding it can increase the symptoms you feel?"
+  },
+
+  "fearCard": {
+    "one": "Acknowledge that emotion as a true ally. Fear informs about a situation in which there is a risk. It helps us see a point of reality important to ourselves and our safety.",
+    "two": "You must evaluate if it is a feeling that is adequate to reality or if we may be feeling it excessively. If this fear is not real, we must change the perception. Find what emotion would be the right one to feel.",
+    "three": "When we feel fear it makes us avoid social contact or stay without looking for new challenges. We can learn to manage it, if we take action. Success is on the other side of fear."
+  },
+
+  "formCards": {
+    "one": "Describe your emotion",
+    "two": "Image url",
+    "three": "Name",
+    "four": "Description",
+    "five": "Add",
+    "six": "Update",
+    "seven": "Cancel",
+    "eight": "Emotion Management",
+    "nine": "Take action",
+    "ten": "Your emotions",
+    "eleven": "Entry",
+    "twelve": "Registration"
+  }
 }

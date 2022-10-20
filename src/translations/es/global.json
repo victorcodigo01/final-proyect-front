@@ -1,67 +1,136 @@
- {
-    "header":{
-        "hello-world":"Hola Mundo",
-        "home": "Casa"
-    },
+{
+  "header": {
+    "hello-world": "Hola Mundo",
+    "home": "Casa"
+  },
 
-    "cards":{
-        "joy": "Sentimiento que se manifiesta a partir de un buen estado de ánimo, comporta satisfacción y va acompañado de la sonrisa o risa",
-        "sorrow": "Sensación de dolor emocional, causado por un factor desencadenante y que conlleva pensamientos con un tono pesimista.",
-        "anger": "Emoción primaria que indica una ira muy grande contra una persona o situación.",
-        "surprise": "Alteración emocional causada por algo imprevisto o inesperado.",
-        "exposed": "Poner algo o alguien de forma que pueda ser visto por los demás",
-        "blurred": "No se distingue a la persona con claridad en la foto.",
-        "headwear": "La persona de la foto tiene la cabeza cubierta y no se le pueden reconocer sus facciones."
-    }, 
-    
-    
-    "title": {
-        "manageEmo": "GESTIÓN DE EMOCIONES",
-        "pomod": "TÉCNICA POMODORO",
-        "taskTime": "TIEMPO DE TAREA"
-    },
+  "cards": {
+    "joy": "Sentimiento que se manifiesta a partir de un buen estado de ánimo, comporta satisfacción y va acompañado de la sonrisa o risa",
+    "sorrow": "Sensación de dolor emocional, causado por un factor desencadenante y que conlleva pensamientos con un tono pesimista.",
+    "anger": "Emoción primaria que indica una ira muy grande contra una persona o situación.",
+    "surprise": "Alteración emocional causada por algo imprevisto o inesperado.",
+    "exposed": "Poner algo o alguien de forma que pueda ser visto por los demás",
+    "blurred": "No se distingue a la persona con claridad en la foto.",
+    "headwear": "La persona de la foto tiene la cabeza cubierta y no se le pueden reconocer sus facciones."
+  },
 
-    "gestionEmociones": {
-        "one": "6 técnicas para desarrollar la gestión emocional.",
-        "two": "1. Diferencia lo que puedes evitar de lo que puedes manejar.",
-        "three": "2. Aprende a enfocarte en tí y en el momento presente.",
-        "four": "3. Planifica solo el futuro inmediato.",
-        "five": "4. Gestiona las preocupaciones una vez al día.",
-        "six": "5. Plantea soluciones al peor de los escenarios.",
-        "seven": "6. Encuentra vías para escapar y drenar."
-    },
+  "title": {
+    "manageEmo": "GESTIÓN DE EMOCIONES",
+    "pomod": "TÉCNICA POMODORO",
+    "taskTime": "TIEMPO DE TAREA"
+  },
 
-    "pomodoroList": {
-        "one": "1. Divide la actividad en tareas.",
-        "two": "2. Una vez divididas, deberás jerarquizarlas. Es decir, priorizarlas y ordenarlas en consecuencia con su ejecución.",
-        "three": "3. Pon el temporizador a 25 minutos y ejecuta el método hasta que suene la alarma. La idea es mantenerte concentrado evitando cualquier distracción.",
-        "four": "4. 5 minutos de pausa corta en la que podrás hacer cualquier cosa.",
-        "five": "5. Deberás poner de nuevo el contador a 0 y programar tus siguientes 25 minutos de trabajo, donde abordarás la siguiente tarea.",
-        "six": "6. Cuando hayas completado cuatro tareas o pomodoros, podrás realizar una pausa más larga, de unos 15 minutos aproximadamente. Después, deberás iniciar un nuevo bloque de cuatro tareas."
-    },
+  "titleCards": {
+    "one": "Tristeza",
+    "two": "Felicidad",
+    "three": "Ansiedad",
+    "four": "Miedo"
+  },
 
+  "theme": {
+    "one": "Tema"
+  },
 
-    "tasking": {
-        "one": "Fracción de tiompo a elegir para la gestion de tareas y emociones.",
-        "two": "1 hora",
-        "three": "2 horas",
-        "four": "3 horas",
-        "five": "4 horas"
-    },
+  "PolitcsPrivacy": {
+    "one": "Política de Privacidad"
+  },
 
-    "buttons": {
-        "one": "Iniciar sesión",
-        "two": "Registrarse"
-    },
+  "PrivacyText": {
+    "one": "Politica de Privacidad",
+    "two": "Victor Martin le informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios y clientes que puedan ser recabados por la navegación o contratación de servicios a través del sitio Pomodoros App.",
+    "three": "En este sentido, el Titular garantiza el cumplimiento de la normativa vigente en materia de protección de datos personales, reflejada en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y de Garantía de Derechos Digitales (LOPD GDD). Cumple también con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD).",
+    "four": "El uso de sitio Web implica la aceptación de esta Política de Privacidad así como las condiciones incluidas en el Aviso Legal.",
+    "five": "Principios aplicados en el tratamiento de datos",
+    "six": "En el tratamiento de tus datos personales, el Titular aplicará los siguientes principios que se ajustan a las exigencias del nuevo reglamento europeo de protección de datos:",
+    "seven": "Principio de licitud, lealtad y transparencia: El Titular siempre requerirá el consentimiento para el tratamiento de tus datos personales que puede ser para uno o varios fines específicos sobre los que te informará previamente con absoluta transparencia.",
+    "eight": "Principio de minimización de datos: El Titular tratará siempre los datos personales de manera lícita, transparente y correcta, con el objetivo de garantizar la máxima seguridad y confidencialidad.",
+    "nine": "Principio de limitación de responsabilidad: El Titular se compromete a no tratar tus datos personales con fines que no sean los previstos en esta Política de Privacidad.",
+    "ten": "Principio de limitación del plazo de conservación: Los datos se mantendrán durante el tiempo estrictamente necesario para el fin o los fines del tratamiento.",
+    "eleven": "El Titular te informará del plazo de conservación correspondiente según la finalidad. En el caso de suscripciones, el Titular revisará periódicamente las listas y eliminará aquellos registros inactivos durante un tiempo considerable.",
+    "twelve": "Principio de integridad y confidencialidad: Tus datos serán tratados de tal manera que su seguridad, confidencialidad e integridad esté garantizada. Debes saber que el Titular toma las precauciones necesarias para evitar el acceso no autorizado o uso indebido de los datos de sus usuarios por parte de terceros.",
+    "thirteen": "Seguridad de los datos personales",
+    "fourteen": "Para proteger tus datos personales, el Titular toma todas las precauciones razonables y sigue las mejores prácticas de la industria para evitar su pérdida, mal uso, acceso indebido, divulgación, alteración o destrucción de los mismos.",
+    "fifteen": "El sitio Web está alojado en Netlify y Render. La seguridad de tus datos está garantizada, ya que toman todas las medidas de seguridad necesarias para ello. Puedes consultar su política de privacidad para tener más información.",
+    "sixteen": "Cambios en la Política de Privacidad",
+    "seventeen": "El Titular se reserva el derecho a modificar la presente Política de Privacidad para adaptarla a novedades legislativas o jurisprudenciales, así como a prácticas de la industria.",
+    "eighteen": "Estas políticas estarán vigentes hasta que sean modificadas por otras debidamente publicadas."
+  },
 
-    "placeholders": {
-        "one": "Correo electrónico",
-        "two": "Contraseña"
-    }
+  "gestionEmociones": {
+    "one": "6 técnicas para desarrollar la gestión emocional.",
+    "two": "1. Diferencia lo que puedes evitar de lo que puedes manejar.",
+    "three": "2. Aprende a enfocarte en tí y en el momento presente.",
+    "four": "3. Planifica solo el futuro inmediato.",
+    "five": "4. Gestiona las preocupaciones una vez al día.",
+    "six": "5. Plantea soluciones al peor de los escenarios.",
+    "seven": "6. Encuentra vías para escapar y drenar."
+  },
 
-    }
-    
-    
-    
-    
+  "pomodoroList": {
+    "one": "1. Divide la actividad en tareas.",
+    "two": "2. Una vez divididas, deberás jerarquizarlas. Es decir, priorizarlas y ordenarlas en consecuencia con su ejecución.",
+    "three": "3. Pon el temporizador a 25 minutos y ejecuta el método hasta que suene la alarma. La idea es mantenerte concentrado evitando cualquier distracción.",
+    "four": "4. 5 minutos de pausa corta en la que podrás hacer cualquier cosa.",
+    "five": "5. Deberás poner de nuevo el contador a 0 y programar tus siguientes 25 minutos de trabajo, donde abordarás la siguiente tarea.",
+    "six": "6. Cuando hayas completado cuatro tareas o pomodoros, podrás realizar una pausa más larga, de unos 15 minutos aproximadamente. Después, deberás iniciar un nuevo bloque de cuatro tareas."
+  },
 
+  "tasking": {
+    "one": "Fracción de tiempo a elegir para gestionar tareas y emociones.",
+    "two": "1 hora",
+    "three": "2 horas",
+    "four": "3 horas",
+    "five": "4 horas"
+  },
+
+  "buttons": {
+    "one": "Iniciar sesión",
+    "two": "Registrarse"
+  },
+
+  "placeholders": {
+    "one": "Correo electrónico",
+    "two": "Contraseña"
+  },
+
+  "sadCard": {
+    "one": "No la niegues, lidia con ella. Deja que tu cuerpo exprese lo que siente con total libertad, que saque lo que lleva dentro.",
+    "two": "Debes entender lo que te pasa y aceptarlo. Necesitas buscar soluciones para salir adelante. No te victimices ni busques culpables.",
+    "three": "Encuentra tu propósito. Es necesario trabajar el autoconocimiento para identificar lo que nos motiva y queremos lograr.",
+    "four": "Date tiempo. Superar la tristeza no es fácil, así que ten paciencia contigo mismo. Cada pequeño logro tienes que celebrarlo. Se constante."
+  },
+
+  "happyCard": {
+    "one": "Es importante valorar todos los aspectos positivos del trabajo: la autonomía, su flexibilidad, conciliación, el trabajo en equipo.",
+    "two": "Ante cualquier duda, pregunta. Charla, comparte experiencias. Está comprobado que el compañerismo aumenta la productividad.",
+    "three": "Trabajar no implica aburrirse en una oficina. Hay que divertirse trabajando, aprender del resto de compañeros, el buen clima laboral es clave sentirse pleno."
+  },
+
+  "anxietyCard": {
+    "one": "Medita 10 minutos. No importa dónde te encuentres. Cierra los ojos y concéntrate en tu respiración. Trata de poner tu mente en blanco.",
+    "two": "Muévete. Unos minutos de actividad física pueden marcar la diferencia. Baila, salta, busca desconectar de la situación por un momento.",
+    "three": "Recuerda algo gracioso o simplemente haz el gesto de reírte. Tu cuerpo comenzará a liberar endorfinas y relajar músculos.",
+    "four": "Comparte lo que sientes. Da la impresión de que está mal visto expresar una cierta debilidad. ¿Sabías que esconderlo puede aumentar los síntomas que sientes?"
+  },
+
+  "fearCard": {
+    "one": "Reconoce esa emoción como una verdadera aliada. El miedo informa sobre una situación en la que hay un riesgo. Nos ayuda a ver un punto de la realidad importante para nosotros mismos y nuestra seguridad.",
+    "two": "Debes evaluar si se trata de un sentimiento adecuado a la realidad o si podemos estar sintiéndolo desmesuradamente. Si este miedo no fuera real, debemos cambiar la percepción. Buscar qué emoción sería la adecuada sentir.",
+    "three": "Cuando sentimos miedo nos hace evitar el contacto social o quedarnos sin buscar nuevos retos. Podemos aprender a manejarlo, si tomamos acción. El éxito está al otro lado del miedo."
+  },
+
+  "formCards": {
+    "one": "Describe tu emoción",
+    "two": "Url de imagen",
+    "three": "Nombre",
+    "four": "Descripción",
+    "five": "Añadir",
+    "six": "Actualizar",
+    "seven": "Cancelar",
+    "eight": "Gestión de las emociones",
+    "nine": "Toma acción",
+    "ten": "Tus emociones",
+    "eleven": "Acceso",
+    "twelve": "Registrarse"
+  }
+}
