@@ -62,8 +62,8 @@ Contiene la Política de privacidad del sitio web.
 
 </div>
 
-<h3>Gestión de las emociones primarias de tristeza y felicidad.</h3>
-<h3>Gestión de las emociones de tristeza y felicidad en inglés.</h3>
+Gestión de las emociones primarias de tristeza y felicidad.
+Gestión de las emociones de tristeza y felicidad en inglés.
 
 La página de usuario consta de las siguientes secciones:
 
