@@ -50,9 +50,9 @@ Contiene la Política de privacidad del sitio web.
 
 ![ScreenShot](/public/capturas-readme-pomodoros/16-tristeza.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/17-alegria.png)
-Gestión de las emociones primarias de tristeza y felicidad.
+<h3>Gestión de las emociones primarias de tristeza y felicidad.</h3>
 ![ScreenShot](/public/capturas-readme-pomodoros/28-emotions-english.png)
-Gestión de las emociones de tristeza y felicidad en inglés.
+<h3>Gestión de las emociones de tristeza y felicidad en inglés.</h3>
 
 ![ScreenShot](/public/capturas-readme-pomodoros/30-formulario-cards.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/21-describe-emocion.png)
