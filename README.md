@@ -7,7 +7,7 @@
 - [Recorrido del proyecto](#Recorrido-del-proyecto)
   - [Página de inicio](#Página-de-inicio)
   - [Página de usuario ](#Página-de-usuario)
-- [Demo en vivo](#Demo-en-vivo)
+- [Demo vivo](#Demo-en-vivo)
 - [Tecnologías utilizadas](#Tecnologías-utilizadas)
 
 # Recorrido del proyecto
