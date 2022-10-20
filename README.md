@@ -7,7 +7,7 @@
 - [Recorrido del proyecto](#Recorrido-del-proyecto)
   - [Página de inicio](#Página-de-inicio)
   - [Página de usuario ](#Página-de-usuario)
-- [Demo vivo](#Demo-en-vivo)
+- [Demo en vivo](#Demo-en-vivo)
 - [Tecnologías utilizadas](#Tecnologías-utilizadas)
 
 # Recorrido del proyecto
@@ -50,7 +50,9 @@ Contiene la Política de privacidad del sitio web.
 
 ![ScreenShot](/public/capturas-readme-pomodoros/16-tristeza.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/17-alegria.png)
+Gestión de las emociones primarias de tristeza y felicidad.
 ![ScreenShot](/public/capturas-readme-pomodoros/28-emotions-english.png)
+Gestión de las emociones de tristeza y felicidad en inglés.
 
 ![ScreenShot](/public/capturas-readme-pomodoros/30-formulario-cards.png)
 ![ScreenShot](/public/capturas-readme-pomodoros/21-describe-emocion.png)
